@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>위로커피로스터리 weroh. — 당신과 함께 나누는 한 잔의 위로</title>
+<meta name="description" content="덕은동 유일의 로스터리 카페 weroh. 계절마다 직접 생두를 선별해 로스팅하고, 신선한 원두로 핸드드립과 에스프레소를 제공합니다.">
+<meta name="theme-color" content="#B8672F">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23221C16'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='38' fill='%23B8672F' text-anchor='middle'%3Ew%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="weroh_touch_icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="위로커피로스터리 weroh.">
+<meta property="og:title" content="위로커피로스터리 weroh. — 당신과 함께 나누는 한 잔의 위로">
+<meta property="og:description" content="덕은동 유일의 로스터리 카페 weroh. 계절마다 직접 생두를 선별해 로스팅하고, 신선한 원두로 핸드드립과 에스프레소를 제공합니다.">
+<meta property="og:image" content="weroh_01.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="위로커피로스터리 weroh. — 당신과 함께 나누는 한 잔의 위로">
+<meta name="twitter:description" content="덕은동 유일의 로스터리 카페 weroh. 계절마다 직접 생두를 선별해 로스팅하고, 신선한 원두로 핸드드립과 에스프레소를 제공합니다.">
+<meta name="twitter:image" content="weroh_01.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "위로커피로스터리",
+  "alternateName": "weroh.",
+  "image": "weroh_01.jpg",
+  "telephone": "0507-1462-3316",
+  "servesCuisine": "Coffee",
+  "priceRange": "₩₩",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "대덕산2길 14 101호",
+    "addressLocality": "고양시 덕양구",
+    "addressRegion": "경기도",
+    "addressCountry": "KR"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "17:00" }
+  ],
+  "sameAs": ["https://www.instagram.com/weroh_roastery/"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&amp;family=Noto+Serif+KR:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin="" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+<style>
+  :root{
+    --paper:#FFFFFF;
+    --paper-deep:#EFE7DA;
+    --sand:#E4D8C6;
+    --wood:#D8C3A0;
+    --wood-deep:#B08A5E;
+    --amber:#B8672F;
+    --amber-soft:#C98A57;
+    --espresso:#221C16;
+    --ink:#332A20;
+    --gray:#8C8276;
+    --line:rgba(34,28,22,.12);
+    --line-soft:rgba(34,28,22,.07);
+
+    --serif:'Fraunces',serif;
+    --serif-kr:'Noto Serif KR','Fraunces',serif;
+    --sans:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;
+
+    --mx:clamp(1.25rem,5vw,6rem);
+    --sp:clamp(5rem,11vw,9.5rem);
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    font-family:var(--sans);
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--amber);color:var(--paper)}
+
+  .wrap{max-width:1280px;margin:0 auto;padding:0 var(--mx)}
+  .eyebrow{
+    font-family:var(--sans);font-size:.72rem;font-weight:600;
+    letter-spacing:.28em;text-transform:uppercase;color:var(--amber);
+    display:inline-block;
+  }
+
+  /* photos */
+  img.photo{object-fit:cover;background:var(--paper-deep)}
+
+  /* ---------- nav ---------- */
+  header.nav{
+    position:fixed;inset:0 0 auto 0;z-index:100;
+    transition:background .4s ease,box-shadow .4s ease,padding .4s ease;
+    padding:1.5rem 0;
+  }
+  header.nav.scrolled{
+    background:rgba(247,242,234,.86);
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    box-shadow:0 1px 0 var(--line-soft);padding:1rem 0;
+  }
+  .nav-inner{display:flex;align-items:center;justify-content:space-between}
+  .brand{display:inline-flex;flex-direction:column;align-items:flex-start;font-family:var(--serif-kr);font-weight:500;font-size:1.2rem;letter-spacing:.01em}
+  .brand-logo{height:20px;width:auto;display:block}
+  .brand small{display:block;font-family:var(--serif);font-weight:400;font-size:.66rem;letter-spacing:.02em;color:var(--gray);margin-top:4px}
+  .nav-links{display:flex;align-items:center;gap:2.2rem}
+  .nav-links a{font-size:.86rem;font-weight:500;color:var(--ink);position:relative;transition:color .25s}
+  .nav-links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-5px;width:0;height:1px;background:var(--amber);transition:width .3s}
+  .nav-links a:not(.btn):hover{color:var(--amber)}
+  .nav-links a:not(.btn):hover::after{width:100%}
+  .btn{
+    display:inline-flex;align-items:center;gap:.5em;
+    font-weight:600;font-size:.85rem;letter-spacing:.01em;
+    padding:.72em 1.5em;border-radius:100px;transition:.3s;cursor:pointer;border:none;
+  }
+  .btn-dark{background:var(--espresso);color:var(--paper)}
+  .btn-dark:hover{background:var(--amber)}
+  .btn-line{border:1px solid var(--line);color:var(--ink);background:transparent}
+  .btn-line:hover{border-color:var(--espresso);background:var(--espresso);color:var(--paper)}
+  .btn-amber{background:var(--amber);color:var(--paper)}
+  .btn-amber:hover{background:var(--espresso)}
+  .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px}
+  .nav-toggle span{width:24px;height:1.6px;background:var(--ink);transition:.3s}
+
+  /* ---------- hero ---------- */
+  .hero{padding-top:clamp(8rem,18vh,11rem);padding-bottom:var(--sp)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+  .hero-copy .eyebrow{margin-bottom:1.6rem}
+  .hero h1{
+    font-family:var(--serif-kr);font-weight:400;
+    font-size:clamp(2.7rem,6.6vw,5.3rem);line-height:1.08;letter-spacing:-.01em;
+    color:var(--espresso);
+  }
+  .hero h1 .en{
+    display:block;font-family:var(--serif);font-style:italic;font-weight:300;
+    font-size:clamp(1.1rem,2.4vw,1.7rem);color:var(--wood-deep);letter-spacing:.01em;
+    margin-top:1.1rem;
+  }
+  .hero p.lead{margin:1.8rem 0 0;font-size:1.06rem;color:var(--ink);max-width:34ch;opacity:.9}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.4rem}
+  .trust{display:flex;gap:2rem;margin-top:2.8rem;padding-top:2rem;border-top:1px solid var(--line-soft)}
+  .trust .t b{font-family:var(--serif);font-size:1.55rem;font-weight:500;color:var(--amber);display:block;line-height:1}
+  .trust .t span{font-size:.78rem;color:var(--gray);letter-spacing:.02em}
+  .hero-photo{aspect-ratio:4/5;border-radius:4px;width:100%;height:100%}
+
+  /* ---------- section heading ---------- */
+  .sec{padding:var(--sp) 0}
+  .sec-head{max-width:52ch}
+  .sec-head .eyebrow{margin-bottom:1.1rem}
+  .sec-title{
+    font-family:var(--serif-kr);font-weight:400;
+    font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.18;letter-spacing:-.01em;color:var(--espresso);
+  }
+  .sec-title .en{font-family:var(--serif);font-style:italic;font-weight:300;color:var(--wood-deep)}
+  .sec-sub{margin-top:1.4rem;color:var(--gray);font-size:1.02rem;max-width:46ch}
+
+  /* ---------- brand story ---------- */
+  .story{background:var(--espresso);color:var(--paper);position:relative}
+  .story .eyebrow{color:var(--amber-soft)}
+  .story-lead{
+    font-family:var(--serif-kr);font-weight:300;
+    font-size:clamp(1.5rem,3.4vw,2.55rem);line-height:1.5;letter-spacing:-.005em;
+    max-width:22ch;
+  }
+  .story-lead em{font-family:var(--serif);font-style:italic;color:var(--amber-soft)}
+  .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,6vw,6rem);align-items:center}
+  .story-body{color:rgba(247,242,234,.72);font-size:1.03rem;max-width:40ch}
+  .story-body p+p{margin-top:1.1rem}
+  .story-tags{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:2rem}
+  .story-tags span{border:1px solid rgba(247,242,234,.22);border-radius:100px;padding:.35em 1em;font-size:.76rem;letter-spacing:.02em;color:rgba(247,242,234,.85)}
+
+  /* ---------- roastery process (numbered) ---------- */
+  .process{background:var(--paper)}
+  .step{
+    display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,5rem);
+    align-items:center;padding:clamp(3rem,7vw,6rem) 0;border-top:1px solid var(--line);
+  }
+  .step:last-child{border-bottom:1px solid var(--line)}
+  .step.rev .step-media{order:2}
+  .step-num{
+    font-family:var(--serif);font-weight:300;font-size:clamp(4rem,11vw,8.5rem);
+    line-height:.8;color:var(--amber);letter-spacing:-.02em;display:block;margin-bottom:1.4rem;
+  }
+  .step-media{position:relative}
+  .step-media .photo{aspect-ratio:5/4;border-radius:4px;width:100%;position:relative;z-index:1}
+  .step-media .accent-block{
+    position:absolute;z-index:0;border-radius:4px;
+    width:70%;height:78%;bottom:-1.6rem;right:-1.6rem;
+  }
+  .step:nth-child(1) .accent-block{background:var(--wood)}
+  .step:nth-child(2) .accent-block{background:var(--amber);left:-1.6rem;right:auto}
+  .step:nth-child(3) .accent-block{background:var(--sand)}
+  .step h3{font-family:var(--serif-kr);font-weight:500;font-size:clamp(1.4rem,3vw,2rem);color:var(--espresso);letter-spacing:-.01em}
+  .step h3 .en{font-family:var(--serif);font-style:italic;font-weight:300;color:var(--wood-deep);font-size:.62em;margin-left:.5em}
+  .step p{margin-top:1rem;color:var(--gray);font-size:1.02rem;max-width:40ch}
+
+  /* ---------- signature menu ---------- */
+  .signature{background:var(--paper-deep)}
+  .sig-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center;margin-top:clamp(2.5rem,5vw,4rem)}
+  .sig-visual{position:relative}
+  .sig-visual .photo{aspect-ratio:1/1;border-radius:4px;width:100%;position:relative;z-index:1}
+  .sig-visual::before{content:"";position:absolute;inset:auto -1.8rem -1.8rem auto;width:62%;height:62%;background:var(--amber);border-radius:4px;z-index:0}
+  .sig-list{list-style:none}
+  .sig-item{display:flex;align-items:baseline;gap:1rem;padding:1.25rem 0;border-bottom:1px solid var(--line)}
+  .sig-item:first-child{border-top:1px solid var(--line)}
+  .sig-item .idx{font-family:var(--serif);font-style:italic;font-size:.9rem;color:var(--amber);width:1.6rem;flex:none}
+  .sig-item .nm{flex:1}
+  .sig-item .nm b{font-family:var(--serif-kr);font-weight:500;font-size:1.12rem;color:var(--espresso);display:block}
+  .sig-item .nm span{font-size:.82rem;color:var(--gray)}
+  .sig-item .price{font-family:var(--serif);font-size:1rem;color:var(--wood-deep);white-space:nowrap}
+
+  /* ---------- hand drip lineup ---------- */
+  .drip-list{margin-top:clamp(2.5rem,5vw,3.5rem);border-top:1px solid var(--line)}
+  .drip-row{
+    display:grid;grid-template-columns:auto 1fr auto;gap:1.5rem;align-items:center;
+    padding:1.5rem 0;border-bottom:1px solid var(--line);transition:.35s;cursor:default;
+  }
+  .drip-row:hover{padding-left:1rem;background:linear-gradient(90deg,rgba(184,103,47,.06),transparent)}
+  .drip-row .rn{font-family:var(--serif);font-style:italic;color:var(--wood-deep);font-size:.95rem;width:2.2rem}
+  .drip-row .rname{font-family:var(--serif-kr);font-weight:500;font-size:clamp(1.05rem,2.4vw,1.5rem);color:var(--espresso)}
+  .drip-row .rnote{font-size:.82rem;color:var(--gray);margin-top:.15rem;font-family:var(--sans);font-weight:400}
+  .drip-row .rmeta{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);font-weight:600;white-space:nowrap}
+
+  /* ---------- bean lineup ---------- */
+  .beans{background:var(--espresso);color:var(--paper)}
+  .beans .eyebrow{color:var(--amber-soft)}
+  .beans .sec-title,.beans-head b{color:var(--paper)}
+  .bean-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:clamp(2.5rem,5vw,3.5rem)}
+  .bean-card{background:rgba(247,242,234,.04);border:1px solid rgba(247,242,234,.1);border-radius:6px;padding:1.6rem;transition:.35s}
+  .bean-card:hover{background:rgba(247,242,234,.08);transform:translateY(-4px)}
+  .bean-card .photo{aspect-ratio:1/1;border-radius:4px;margin-bottom:1.3rem;width:100%}
+  .bean-card h4{font-family:var(--serif-kr);font-weight:500;font-size:1.12rem;color:var(--paper)}
+  .bean-card p{font-size:.82rem;color:rgba(247,242,234,.6);margin-top:.35rem}
+  .bean-card .price{margin-top:1rem;font-family:var(--serif);font-size:1.05rem;color:var(--amber-soft)}
+  .beans-note{margin-top:2.2rem;font-size:.86rem;color:rgba(247,242,234,.55);letter-spacing:.01em}
+  .beans-note b{color:var(--amber-soft);font-weight:600;font-family:var(--serif)}
+
+  /* ---------- review ---------- */
+  .review{background:var(--paper)}
+  .review-top{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(1.5rem,4vw,2.5rem);margin-top:clamp(2rem,4vw,3rem)}
+  .review-stat-card{background:var(--paper-deep);border-radius:8px;padding:2rem;display:flex;flex-direction:column;justify-content:center;gap:1.1rem}
+  .review-stat-row{display:flex;flex-wrap:wrap;align-items:center;gap:1.8rem}
+  .review-stat{display:flex;align-items:center;gap:.7rem}
+  .review-stat b{font-family:var(--serif);font-size:2.1rem;font-weight:500;color:var(--amber)}
+  .review-stat span{font-size:.8rem;color:var(--gray);line-height:1.4}
+  .review-divider{width:1px;height:2.4rem;background:var(--line)}
+  .review-stat-note{font-size:.78rem;color:var(--gray)}
+  .review-kw-card{background:var(--paper-deep);border-radius:8px;padding:2rem}
+  .review-kw-card h3{font-family:var(--sans);font-size:.86rem;font-weight:600;color:var(--espresso);margin-bottom:1.3rem}
+  .review-kw-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(72px,1fr));gap:1rem}
+  .review-kw-item{display:flex;flex-direction:column;align-items:center;gap:.4rem;text-align:center}
+  .review-kw-item .ic{font-size:1.4rem}
+  .review-kw-item span{font-size:.72rem;color:var(--ink);line-height:1.3}
+  .review-kw-item small{font-size:.66rem;color:var(--gray)}
+  .review-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:clamp(2.5rem,5vw,3.5rem)}
+  .review-card{background:var(--paper-deep);border-radius:8px;padding:1.8rem;display:flex;flex-direction:column;gap:.9rem}
+  .review-card .stars{color:var(--amber);font-size:.95rem;letter-spacing:.06em}
+  .review-card .rtitle{font-family:var(--serif-kr);font-weight:500;font-size:1.05rem;color:var(--espresso);line-height:1.4}
+  .review-card .rquote{font-size:.86rem;color:var(--gray);line-height:1.65;flex:1}
+  .review-card .rfoot{display:flex;flex-direction:column;gap:.8rem;border-top:1px solid var(--line);padding-top:.9rem}
+  .review-card .rauthor{display:flex;align-items:center;gap:.7rem}
+  .review-card .ravatar-ini{width:2.1rem;height:2.1rem;border-radius:50%;flex:none;background:var(--amber);color:var(--paper);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:600;font-size:.9rem}
+  .review-card .rname{font-size:.86rem;font-weight:600;color:var(--espresso);display:block}
+  .review-card .rcount{font-size:.72rem;color:var(--gray)}
+  .review-card .rtags{display:flex;flex-wrap:wrap;gap:.4rem}
+  .review-card .rtags span{font-size:.68rem;background:rgba(34,28,22,.06);border-radius:100px;padding:.3em .8em;color:var(--ink)}
+  .review-card .rlink{font-size:.76rem;color:var(--amber);font-weight:600}
+  .review-card .rlink:hover{text-decoration:underline}
+
+  /* ---------- instagram ---------- */
+  .insta-head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem}
+  .ig-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.9rem;margin-top:clamp(2rem,4vw,3rem)}
+  .ig-grid a{position:relative;overflow:hidden;border-radius:4px;display:block}
+  .ig-grid .photo{aspect-ratio:1/1;width:100%;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+  .ig-grid a:hover .photo{transform:scale(1.05)}
+
+  /* ---------- location ---------- */
+  .location{background:var(--paper-deep)}
+  .loc-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,4.5rem);align-items:stretch;margin-top:clamp(2.5rem,5vw,3.5rem)}
+  .loc-map{border-radius:6px;overflow:hidden;min-height:420px;position:relative}
+  .loc-map .photo{position:absolute;inset:0;width:100%;height:100%}
+  .loc-info{display:flex;flex-direction:column;justify-content:center}
+  .loc-row{padding:1.3rem 0;border-bottom:1px solid var(--line)}
+  .loc-row:first-child{border-top:1px solid var(--line)}
+  .loc-row .lb{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);font-weight:600;margin-bottom:.4rem}
+  .loc-row .val{font-family:var(--serif-kr);font-weight:500;font-size:1.1rem;color:var(--espresso)}
+  .loc-row .val small{display:block;font-family:var(--sans);font-weight:400;font-size:.9rem;color:var(--gray);margin-top:.25rem}
+  .loc-cta{display:flex;gap:.8rem;margin-top:2rem;flex-wrap:wrap}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--espresso);color:var(--paper);padding:clamp(4rem,8vw,6rem) 0 2.5rem}
+  .foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem;padding-bottom:3rem;border-bottom:1px solid rgba(247,242,234,.14)}
+  .foot-brand{font-family:var(--serif-kr);font-weight:500;font-size:1.5rem;margin-bottom:1rem}
+  .foot-brand small{display:block;font-family:var(--serif);font-style:italic;font-weight:300;font-size:.85rem;color:var(--amber-soft);margin-top:.4rem;letter-spacing:.05em}
+  .foot-desc{color:rgba(247,242,234,.6);font-size:.92rem;max-width:34ch}
+  .foot-col h5{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--amber-soft);margin-bottom:1.1rem;font-weight:600}
+  .foot-col a,.foot-col p{display:block;color:rgba(247,242,234,.72);font-size:.92rem;margin-bottom:.6rem;transition:color .25s}
+  .foot-col a:hover{color:var(--paper)}
+  .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding-top:2rem;color:rgba(247,242,234,.45);font-size:.8rem}
+
+  /* ---------- reveal animation ---------- */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- responsive ---------- */
+  @media(max-width:900px){
+    .hero-grid,.story-grid,.sig-grid,.loc-grid{grid-template-columns:1fr}
+    .hero-photo{order:-1;aspect-ratio:16/11;max-height:46vh}
+    .story-grid{gap:2.5rem}
+    .bean-grid{grid-template-columns:repeat(2,1fr)}
+    .review-top{grid-template-columns:1fr}
+    .review-cards{grid-template-columns:repeat(2,1fr)}
+    .ig-grid{grid-template-columns:repeat(3,1fr)}
+    .step,.step.rev .step-media{grid-template-columns:1fr}
+    .step .step-media{order:-1 !important;margin-bottom:.5rem}
+    .step .accent-block{display:none}
+    .sig-visual::before{display:none}
+    .foot-top{grid-template-columns:1fr 1fr}
+    .loc-map{min-height:300px}
+  }
+  @media(max-width:640px){
+    .nav-links{
+      position:fixed;inset:0 0 0 auto;width:min(80vw,320px);
+      background:var(--paper);flex-direction:column;justify-content:center;
+      gap:1.8rem;padding:2rem;transform:translateX(100%);transition:transform .4s cubic-bezier(.5,0,.2,1);
+      box-shadow:-20px 0 60px rgba(0,0,0,.12);align-items:flex-start;
+    }
+    .nav-links.open{transform:none}
+    .nav-links a{font-size:1.15rem}
+    .nav-toggle{display:flex;z-index:110}
+    .nav-toggle.open span:nth-child(1){transform:translateY(6.6px) rotate(45deg)}
+    .nav-toggle.open span:nth-child(2){opacity:0}
+    .nav-toggle.open span:nth-child(3){transform:translateY(-6.6px) rotate(-45deg)}
+    .trust{flex-wrap:wrap;gap:1.5rem}
+    .bean-grid{grid-template-columns:1fr}
+    .review-cards{grid-template-columns:1fr}
+    .ig-grid{grid-template-columns:repeat(2,1fr)}
+    .foot-top{grid-template-columns:1fr}
+    .drip-row{grid-template-columns:auto 1fr;gap:1rem}
+    .drip-row .rmeta{display:none}
+    .sig-item .price{display:none}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+
+<style data-editor="" id="editor-style">
+#ed-bar{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:99999;display:flex;gap:8px;align-items:center;background:#221C16;color:#F7F2EA;padding:9px 11px;border-radius:100px;box-shadow:0 12px 40px rgba(0,0,0,.30);font-family:'Pretendard',-apple-system,sans-serif}
+#ed-bar button{border:none;border-radius:100px;padding:9px 15px;font-weight:600;font-size:13px;cursor:pointer;font-family:inherit;transition:.2s}
+#ed-bar .b-save{background:#F7F2EA;color:#221C16}#ed-bar .b-save:hover{background:#fff}
+#ed-bar .b-ghost{background:rgba(247,242,234,.12);color:#F7F2EA}#ed-bar .b-ghost:hover{background:rgba(247,242,234,.22)}
+#ed-hint{font-size:12.5px;color:rgba(247,242,234,.72);padding:0 6px 0 4px;white-space:nowrap}
+body.editing .reveal{opacity:1 !important;transform:none !important}
+body.editing img.photo{outline:3px dashed #B8672F;outline-offset:-3px;cursor:pointer;transition:filter .2s}
+body.editing img.photo:hover{filter:brightness(.82)}
+body.editing [data-tid]{outline:1px dashed rgba(184,103,47,.45);outline-offset:2px;border-radius:2px}
+body.editing [data-tid]:hover{outline-color:rgba(184,103,47,.8);cursor:text}
+body.editing [data-tid]:focus{outline:2px solid #B8672F;background:rgba(184,103,47,.06)}
+#ed-tip{position:fixed;z-index:99999;pointer-events:none;background:#221C16;color:#F7F2EA;padding:6px 10px;border-radius:8px;font:600 12px 'Pretendard',sans-serif;display:none;white-space:nowrap;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+#ed-tip b{color:#C98A57}
+#ed-toast{position:fixed;left:50%;bottom:82px;transform:translateX(-50%);z-index:99999;background:#B8672F;color:#fff;padding:10px 20px;border-radius:100px;font:600 13px 'Pretendard',sans-serif;opacity:0;transition:opacity .3s;pointer-events:none}
+#ed-textctl{position:fixed;z-index:99999;display:none;gap:3px;align-items:center;background:#221C16;color:#F7F2EA;padding:5px 7px;border-radius:100px;box-shadow:0 8px 24px rgba(0,0,0,.34);font:700 12px 'Pretendard',sans-serif}
+#ed-textctl button{border:none;background:rgba(247,242,234,.12);color:#F7F2EA;min-width:28px;height:28px;padding:0 6px;border-radius:100px;cursor:pointer;font-size:13px;line-height:1;font-family:inherit}
+#ed-textctl button:hover{background:rgba(247,242,234,.26)}
+#ed-textctl .sz{min-width:40px;text-align:center;font-variant-numeric:tabular-nums;color:#C98A57}
+#ed-textctl .sep{width:1px;height:16px;background:rgba(247,242,234,.22);margin:0 3px}
+#ed-textctl input[type=color]{width:26px;height:26px;border:none;border-radius:50%;background:none;cursor:pointer;padding:0;box-shadow:0 0 0 2px rgba(247,242,234,.25)}
+.ed-wh{position:fixed;z-index:99998;display:none;width:11px;height:46px;border-radius:6px;background:#B8672F;box-shadow:0 2px 10px rgba(0,0,0,.35);cursor:ew-resize;opacity:.92}
+.ed-wh:hover{opacity:1;background:#a35a27}
+.ed-wh::after{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:2px;height:18px;background:rgba(255,255,255,.7);box-shadow:3px 0 0 rgba(255,255,255,.7),-3px 0 0 rgba(255,255,255,.7)}
+body:not(.editing) .ed-wh{display:none!important}
+body:not(.editor-unlocked) [data-editor]{display:none!important}
+#ed-colors{position:fixed;top:0;right:0;height:100%;width:310px;max-width:88vw;background:#F7F2EA;color:#221C16;z-index:99998;box-shadow:-16px 0 50px rgba(0,0,0,.22);transform:translateX(100%);transition:transform .32s cubic-bezier(.4,0,.2,1);padding:24px 22px;overflow:auto;font-family:'Pretendard',sans-serif}
+#ed-colors.open{transform:none}
+#ed-colors h4{font-size:15px;font-weight:700;margin-bottom:3px}
+#ed-colors .sub{font-size:12px;color:#8C8276;margin-bottom:16px;line-height:1.5}
+.cr{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid rgba(34,28,22,.08)}
+.cr label{flex:1;font-size:13px}
+.cr input[type=color]{width:34px;height:34px;border:1px solid rgba(34,28,22,.12);border-radius:8px;background:none;cursor:pointer;padding:2px}
+.cr input[type=text]{width:82px;border:1px solid rgba(34,28,22,.15);border-radius:6px;padding:6px 7px;font:12px 'Pretendard';color:#221C16}
+#ed-colors .cbtns{display:flex;gap:8px;margin-top:18px}
+#ed-colors .cbtns button{flex:1;border:none;border-radius:8px;padding:10px;font-weight:600;font-size:12.5px;cursor:pointer;font-family:inherit}
+#ed-cclose{background:#221C16;color:#fff}#ed-creset{background:rgba(34,28,22,.08);color:#221C16}
+#ed-margins{position:fixed;top:0;right:0;height:100%;width:310px;max-width:88vw;background:#F7F2EA;color:#221C16;z-index:99998;box-shadow:-16px 0 50px rgba(0,0,0,.22);transform:translateX(100%);transition:transform .32s cubic-bezier(.4,0,.2,1);padding:24px 22px;overflow:auto;font-family:'Pretendard',sans-serif}
+#ed-margins.open{transform:none}
+#ed-margins h4{font-size:15px;font-weight:700;margin-bottom:3px}
+#ed-margins .sub{font-size:12px;color:#8C8276;margin-bottom:16px;line-height:1.5}
+.mr{padding:9px 0;border-bottom:1px solid rgba(34,28,22,.08)}
+.mr .mr-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.mr label{font-size:13px}
+.mr .mv{font-size:12px;font-variant-numeric:tabular-nums;color:#B8672F;font-weight:600}
+.mr input[type=range]{width:100%;accent-color:#B8672F}
+#ed-margins .cbtns{display:flex;gap:8px;margin-top:18px}
+#ed-margins .cbtns button{flex:1;border:none;border-radius:8px;padding:10px;font-weight:600;font-size:12.5px;cursor:pointer;font-family:inherit}
+#ed-mclose{background:#221C16;color:#fff}#ed-mreset{background:rgba(34,28,22,.08);color:#221C16}
+@media(max-width:680px){#ed-hint{display:none}#ed-bar button{padding:9px 12px;font-size:12px}}
+</style>
+</head>
+<body class="">
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand" data-tid="t0"><img src="weroh_logo_nav.png" alt="weroh. 위로커피로스터리" class="brand-logo"><small>위로커피로스터리 · specialty coffee roastery</small></a>
+    <nav class="nav-links" id="menu">
+      <a href="#story" data-tid="t1">브랜드</a>
+      <a href="#process" data-tid="t2">로스팅</a>
+      <a href="#menu-sec" data-tid="t3">메뉴</a>
+      <a href="#beans" data-tid="t4">원두</a>
+      <a href="#location" data-tid="t5">오시는 길</a>
+      <a href="#location" class="btn btn-dark" data-tid="t6" style="color: rgb(255, 255, 255);">문의하기</a>
+    </nav>
+    <button class="nav-toggle" id="toggle" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<span id="top"></span>
+
+<!-- ================= HERO ================= -->
+<section class="hero wrap" style="padding-top:100px;padding-bottom:100px">
+  <div class="hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow" data-tid="t7">덕은동 유일의 로스터리 카페 · 직접 로스팅</span>
+      <h1 data-tid="t16" style="line-height: 1.08;"><span class="ed-fs" style="font-size:59.594px">당신과 함께<br>나누는<br>한 잔의 위로</span>
+        <span class="en">A cup of comfort, shared with you.</span>
+      </h1>
+      <p class="lead" data-tid="t17" style="max-width: 410px; width: auto;">계절마다 직접 생두를 선별해 로스팅합니다.&nbsp;<br>신선한 원두로 내리는 핸드드립과 에스프레소를 만나보세요.</p>
+      <div class="hero-cta">
+        <a href="#menu-sec" class="btn btn-dark" data-tid="t186">메뉴 보기</a>
+        <a href="#location" class="btn btn-line" data-tid="t187">문의하기</a>
+        <a href="#location" class="btn btn-line" data-tid="t188">찾아오는 길</a>
+      </div>
+      <div class="trust">
+        <div class="t"><b data-tid="t18">100%</b><span data-tid="t21">매장 직접 로스팅</span></div>
+        <div class="t"><b data-tid="t19">7종</b><span data-tid="t22">스페셜티 핸드드립</span></div>
+        <div class="t"><b data-tid="t20">계절별</b><span data-tid="t23">생두 선별 · 신선함</span></div>
+      </div>
+    </div>
+    <div class="reveal">
+      <img class="photo hero-photo" src="weroh_01.jpg" data-slot="hero" data-label="히어로 · 대표 이미지" alt="위로커피 핸드드립 추출 장면">
+    </div>
+  </div>
+</section>
+
+<!-- ================= BRAND STORY ================= -->
+<section class="sec story" id="story">
+  <div class="wrap story-grid">
+    <div class="reveal">
+      <span class="eyebrow" data-tid="t8">Brand Story</span>
+      <p class="story-lead" style="margin-top:1.4rem" data-tid="t37">커피 한 잔으로 전하는<br>일상 속 작은 위로.</p>
+    </div>
+    <div class="reveal story-body">
+      <p data-tid="t38">위로커피로스터리는 덕은동 유일의 로스터리 카페입니다. 매장에서 직접 원두를 볶아, 가장 신선한 상태로 내려드립니다.</p>
+      <p data-tid="t39">계절마다 직접 생두를 선별하고 로스팅해 핸드드립과 에스프레소로 제공합니다. 화려함보다 한 잔의 깊이에 집중합니다.</p>
+      <div class="story-tags">
+        <span data-tid="t40">직접 로스팅</span><span data-tid="t41">핸드드립</span><span data-tid="t42">원두 판매</span>
+        <span data-tid="t43">드립백</span><span data-tid="t44">테이크아웃</span><span data-tid="t45">단체 이용 가능</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ROASTERY PROCESS (numbered) ================= -->
+<section class="sec process" id="process">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-tid="t9">The Roastery</span>
+      <h2 class="sec-title" data-tid="t24">생두에서 한 잔까지,<br><span class="en">from green bean to cup.</span></h2>
+      <p class="sec-sub" data-tid="t31">'예쁜 카페'가 아니라 '직접 로스팅하는 로스터리'.&nbsp;<br>세 단계의 정성이 한 잔에 담깁니다.</p>
+    </div>
+
+    <!-- 01 -->
+    <div class="step reveal">
+      <div class="step-text">
+        <span class="step-num" data-tid="t46">01</span>
+        <h3 data-tid="t49">생두 선별<span class="en">Selection</span></h3>
+        <p data-tid="t52">계절마다 산지와 품종을 직접 살펴 그 시기 가장 좋은 생두를 고릅니다. 좋은 한 잔은 좋은 재료에서 시작됩니다.</p>
+      </div>
+      <div class="step-media">
+        <div class="accent-block"></div>
+        <img class="photo" loading="lazy" decoding="async" src="weroh_05.jpg" data-slot="step1" data-label="로스팅 01 · 생두 선별" alt="커피 산지의 생두 농장">
+      </div>
+    </div>
+
+    <!-- 02 -->
+    <div class="step rev reveal">
+      <div class="step-media">
+        <div class="accent-block"></div>
+        <img class="photo" loading="lazy" decoding="async" src="weroh_09.jpg" data-slot="step2" data-label="로스팅 02 · 로스팅" alt="매장 로스터기와 로스팅 공간">
+      </div>
+      <div class="step-text">
+        <span class="step-num" data-tid="t47">02</span>
+        <h3 data-tid="t50">로스팅<span class="en">Roasting</span></h3>
+        <p data-tid="t53">매장에서 소량씩 직접 볶아 항상 신선합니다. 원두 본연의 개성을 살려 부담 없는 산미와 깔끔한 맛으로 완성합니다.</p>
+      </div>
+    </div>
+
+    <!-- 03 -->
+    <div class="step reveal">
+      <div class="step-text">
+        <span class="step-num" data-tid="t48">03</span>
+        <h3 data-tid="t51">추출<span class="en">Brewing</span></h3>
+        <p data-tid="t54">핸드드립과 에스프레소, 두 가지 방식으로 내려드립니다. 원하시면 원두의 특징을 친절히 설명해 드립니다.</p>
+      </div>
+      <div class="step-media">
+        <div class="accent-block"></div>
+        <img class="photo" loading="lazy" decoding="async" src="weroh_16.jpg" data-slot="step3" data-label="로스팅 03 · 추출" alt="핸드드립으로 커피를 내리는 모습">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SIGNATURE MENU ================= -->
+<section class="sec signature" id="menu-sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-tid="t10">Signature Menu</span>
+      <h2 class="sec-title" data-tid="t25">위로가 추천하는 다섯 가지</h2>
+      <p class="sec-sub" data-tid="t32">처음이라면 여기서 시작하세요. 시그니처 라떼와 대표 원두를 담았습니다.</p>
+    </div>
+    <div class="sig-grid">
+      <div class="sig-visual reveal">
+        <img class="photo" loading="lazy" decoding="async" src="weroh_18.jpg" data-slot="sig" data-label="시그니처 · 대표 메뉴" alt="위로 시그니처 잔과 Glow Blend 원두">
+      </div>
+      <ul class="sig-list reveal">
+        <li class="sig-item"><span class="idx">01</span><span class="nm"><b data-tid="t55">시그니처 라떼 (HOT)</b><span data-tid="t60">위로의 대표 한 잔, 부드럽고 균형 잡힌 맛</span></span><span class="price" data-tid="t65">₩3,700</span></li>
+        <li class="sig-item"><span class="idx">02</span><span class="nm"><b data-tid="t56">시그니처 라떼 (ICED)</b><span data-tid="t61">깔끔하게 즐기는 시그니처</span></span><span class="price" data-tid="t66">₩4,200</span></li>
+        <li class="sig-item"><span class="idx">03</span><span class="nm"><b data-tid="t57">에티오피아 타데 G1</b><span data-tid="t62">화사한 향과 부담 없는 산미의 핸드드립</span></span><span class="price" data-tid="t67">₩4,200</span></li>
+        <li class="sig-item"><span class="idx">04</span><span class="nm"><b data-tid="t58">위로 오리진 블렌드</b><span data-tid="t63">매일 마시기 좋은 위로의 시그니처 블렌드</span></span><span class="price" data-tid="t68">₩4,200</span></li>
+        <li class="sig-item"><span class="idx">05</span><span class="nm"><b data-tid="t59">드립백 선물세트</b><span data-tid="t64">집에서도, 선물로도 좋은 구성</span></span><span class="price" data-tid="t69">Gift</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HAND DRIP ================= -->
+<section class="sec process" id="drip">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-tid="t11">Hand Drip</span>
+      <h2 class="sec-title" data-tid="t26">오늘의 핸드드립 라인업</h2>
+      <p class="sec-sub" data-tid="t33">직접 로스팅한 스페셜티 원두를 한 잔씩 정성껏 내려드립니다. 모든 핸드드립 ₩4,200 · 계절에 따라 라인업이 바뀝니다.</p>
+    </div>
+    <div class="drip-list reveal">
+      <div class="drip-row"><span class="rn">01</span><div><div class="rname" data-tid="t70">에티오피아 타데 G1</div><div class="rnote" data-tid="t77">화사한 꽃향 · 부담 없는 산미</div></div><span class="rmeta" data-tid="t84">Ethiopia</span></div>
+      <div class="drip-row"><span class="rn">02</span><div><div class="rname" data-tid="t71">위로 오리진 블렌드</div><div class="rnote" data-tid="t78">균형감 · 매일 마시기 좋은</div></div><span class="rmeta" data-tid="t85">Signature</span></div>
+      <div class="drip-row"><span class="rn">03</span><div><div class="rname" data-tid="t72">위로 그로우 블렌드</div><div class="rnote" data-tid="t79">묵직한 바디 · 고소한 여운</div></div><span class="rmeta" data-tid="t86">Signature</span></div>
+      <div class="drip-row"><span class="rn">04</span><div><div class="rname" data-tid="t73">콜롬비아 디카페인</div><div class="rnote" data-tid="t80">부드러운 단맛 · 카페인 부담 없이</div></div><span class="rmeta" data-tid="t87">Decaf</span></div>
+      <div class="drip-row"><span class="rn">05</span><div><div class="rname" data-tid="t74">과테말라 우에우에테낭고</div><div class="rnote" data-tid="t81">진한 단맛 · 초콜릿 뉘앙스</div></div><span class="rmeta" data-tid="t88">Guatemala</span></div>
+      <div class="drip-row"><span class="rn">06</span><div><div class="rname" data-tid="t75">르완다 부산제</div><div class="rnote" data-tid="t82">깔끔한 산미 · 밝은 캐릭터</div></div><span class="rmeta" data-tid="t89">Rwanda</span></div>
+      <div class="drip-row"><span class="rn">07</span><div><div class="rname" data-tid="t76">콜롬비아 로스 파티오스 베리</div><div class="rnote" data-tid="t83">베리 향 · 화려한 개성</div></div><span class="rmeta" data-tid="t90">Colombia</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BEAN LINEUP ================= -->
+<section class="sec beans" id="beans">
+  <div class="wrap">
+    <div class="sec-head reveal beans-head">
+      <span class="eyebrow" data-tid="t12">Bean Lineup</span>
+      <h2 class="sec-title" data-tid="t27">집에서도, 위로 한 잔</h2>
+      <p class="sec-sub" style="color:rgba(247,242,234,.62)" data-tid="t34">매장에서 직접 로스팅한 원두를 판매합니다. 네이버 주문으로도 편하게 받아보세요.</p>
+    </div>
+    <div class="bean-grid">
+      <div class="bean-card reveal">
+        <img class="photo" loading="lazy" decoding="async" src="weroh_19.jpg" data-slot="bean1" data-label="원두 · 에티오피아 타데 G1" alt="에티오피아 타데 G1 원두">
+        <h4 data-tid="t91">에티오피아 타데 G1</h4><p data-tid="t95">화사한 향, 부담 없는 산미</p><div class="price" data-tid="t99">원두 판매 · 드립백</div>
+      </div>
+      <div class="bean-card reveal">
+        <img class="photo" loading="lazy" decoding="async" src="weroh_20.jpg" data-slot="bean2" data-label="원두 · 위로 오리진 블렌드" alt="위로 오리진 블렌드 원두">
+        <h4 data-tid="t92">위로 오리진 블렌드</h4><p data-tid="t96">매일 마시기 좋은 균형</p><div class="price" data-tid="t100">원두 판매 · 드립백</div>
+      </div>
+      <div class="bean-card reveal">
+        <img class="photo" loading="lazy" decoding="async" src="weroh_21.jpg" data-slot="bean3" data-label="원두 · 콜롬비아 디카페인" alt="콜롬비아 디카페인 원두">
+        <h4 data-tid="t93">콜롬비아 디카페인</h4><p data-tid="t97">부드러운 단맛, 카페인 부담 없이</p><div class="price" data-tid="t101">원두 판매</div>
+      </div>
+      <div class="bean-card reveal">
+        <img class="photo" loading="lazy" decoding="async" src="weroh_10.jpg" data-slot="bean4" data-label="원두 · 드립백 선물세트" alt="위로 드립백 선물세트">
+        <h4 data-tid="t94">드립백 선물세트</h4><p data-tid="t98">집에서도, 선물로도 좋은 구성</p><div class="price" data-tid="t102">Gift Set</div>
+      </div>
+    </div>
+    <p class="beans-note reveal" data-tid="t103">원두 구매 &nbsp;·&nbsp; 200g <b>16,000원</b> &nbsp; 500g <b>26,000원</b> &nbsp; 1kg <b>45,000원</b> &nbsp;·&nbsp; 원두 구매 시 아메리카노 <b>1잔 무료</b></p>
+    <div style="margin-top:2.2rem" class="reveal"><a href="#location" class="btn btn-amber" data-tid="t189">원두 구매 문의</a></div>
+  </div>
+</section>
+
+<!-- ================= REVIEW ================= -->
+<section class="sec review" id="review">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-tid="t13">From Our Guests</span>
+      <h2 class="sec-title" data-tid="t28">손님들이 남긴 <span class="en">words.</span></h2>
+      <p class="sec-sub" data-tid="t35">실제 네이버 플레이스 리뷰에서 가져온 이야기입니다.</p>
+    </div>
+
+    <!-- 평점 요약 + 키워드 -->
+    <div class="review-top">
+      <div class="review-stat-card reveal">
+        <div class="review-stat-row">
+          <div class="review-stat"><b data-tid="t104">4.8</b><span data-tid="t106">네이버 리뷰 평균<br>(소개된 5건 기준)</span></div>
+          <div class="review-divider"></div>
+          <div class="review-stat"><b data-tid="t105">5</b><span data-tid="t107">이 페이지에<br>소개된 후기</span></div>
+        </div>
+        <p class="review-stat-note" data-tid="t108">실제 네이버 플레이스 리뷰 캡처를 바탕으로 정리했습니다.</p>
+      </div>
+      <div class="review-kw-card reveal">
+        <h3 data-tid="t109">리뷰에 가장 많이 붙은 키워드</h3>
+        <div class="review-kw-grid">
+          <div class="review-kw-item"><span class="ic" data-tid="t110">☕</span><span data-tid="t111">커피가<br>맛있어요</span><small data-tid="t120">4회</small></div>
+          <div class="review-kw-item"><span class="ic" data-tid="t112">🛋️</span><span data-tid="t113">인테리어가<br>멋져요</span><small data-tid="t121">2회</small></div>
+          <div class="review-kw-item"><span class="ic" data-tid="t114">📸</span><span data-tid="t115">사진이<br>잘 나와요</span><small data-tid="t122">2회</small></div>
+          <div class="review-kw-item"><span class="ic" data-tid="t116">💗</span><span data-tid="t117">친절해요</span><small data-tid="t123">2회</small></div>
+          <div class="review-kw-item"><span class="ic" data-tid="t118">🎁</span><span data-tid="t119">특별한<br>메뉴가 있어요</span><small data-tid="t124">2회</small></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 후기 카드 -->
+    <div class="review-cards">
+      <article class="review-card reveal">
+        <div class="stars">★★★★ 4.5</div>
+        <h3 class="rtitle" data-tid="t125">산미 부담 없이 깔끔한 르완다 부산제</h3>
+        <p class="rquote" data-tid="t130">저는 르완다 부산제 마셔봤어요~ 산미가 부담스럽지 않고 깔끔해서 마시기 좋았고 마실수록 은은하게 올라오는 과일향도 거부감없이 좋았습니다. 원두 본연의 개성이 잘 느껴졌던 것 같아요. 위로라는 컨셉과 밝은 공간이 왠지 편안하게 느껴지기도 했고, 커피에 진심인 느낌이 들어 좋았습니다.</p>
+        <div class="rfoot">
+          <div class="rauthor">
+            <span class="ravatar-ini">E</span>
+            <div><span class="rname" data-tid="t135">Eclat du Temps</span><span class="rcount" data-tid="t140">네이버 리뷰 283개</span></div>
+          </div>
+          <div class="rtags"><span data-tid="t145">커피가 맛있어요</span><span data-tid="t146">특별한 메뉴가 있어요</span><span data-tid="t147">친절해요</span><span data-tid="t148">매장이 청결해요</span></div>
+          <a class="rlink" href="리뷰1.PNG" target="_blank" rel="noopener" data-tid="t162">📷 네이버 리뷰 원본 보기</a>
+        </div>
+      </article>
+      <article class="review-card reveal">
+        <div class="stars">★★★★★ 5.0</div>
+        <h3 class="rtitle" data-tid="t126">따뜻하게도 차갑게도 다 맛있는 원두</h3>
+        <p class="rquote" data-tid="t131">위로커피 원두는 따뜻하게 마셔도, 차갑게 마셔도 아메리카노든 라떼든 다 맛있어요! 주말에만 커피를 내려 마셔서 맛있는 커피를 마실 수 있는 주말 홈카페 시간을 기다립니다. 제일 좋아하는 에티오피아 G1 원두와 과테말라 원두를 새로 주문해 봤는데 각각의 특색이 달라서 골고루 마셔보고 있습니다.</p>
+        <div class="rfoot">
+          <div class="rauthor">
+            <span class="ravatar-ini">덕</span>
+            <div><span class="rname" data-tid="t136">덕패밀리</span><span class="rcount" data-tid="t141">네이버 리뷰 1,721개</span></div>
+          </div>
+          <div class="rtags"><span data-tid="t149">커피가 맛있어요</span><span data-tid="t150">음악이 좋아요</span><span data-tid="t151">뷰가 좋아요</span><span data-tid="t152">친절해요</span></div>
+          <a class="rlink" href="리뷰2.PNG" target="_blank" rel="noopener" data-tid="t163">📷 네이버 리뷰 원본 보기</a>
+        </div>
+      </article>
+      <article class="review-card reveal">
+        <div class="stars">★★★★ 4.5</div>
+        <h3 class="rtitle" data-tid="t127">특별함이 있는 커피, 라떼도 궁금해지는 곳</h3>
+        <p class="rquote" data-tid="t132">매장안에 로스팅기계가 있길래 전부터 가보고싶었던곳. 진한커피를 좋아하는편인데 적당한 강도의 특별한 원두향이 나는 커피였음. 한모금 마시면서 맛이 특이하네~?했음. 그래서 그런가 뭔가 다같은 커피가 아닌 특별함이 있는 가게구나 생각함. 라떼맛 궁금해서 다시 방문해봐야겠음.</p>
+        <div class="rfoot">
+          <div class="rauthor">
+            <span class="ravatar-ini">보</span>
+            <div><span class="rname" data-tid="t137">보르댕</span><span class="rcount" data-tid="t142">네이버 리뷰 386개</span></div>
+          </div>
+          <a class="rlink" href="리뷰3.PNG" target="_blank" rel="noopener" data-tid="t164">📷 네이버 리뷰 원본 보기</a>
+        </div>
+      </article>
+      <article class="review-card reveal">
+        <div class="stars">★★★★★ 5.0</div>
+        <h3 class="rtitle" data-tid="t128">새로운 아지트, 시그니처 라떼가 꼬숩네요</h3>
+        <p class="rquote" data-tid="t133">직접 원두를 로스팅 하신다기에 찾아가 봤는데, 너무 맛있습니다. 시그니처 라떼는 정말 꼬숩구요. 호지차라떼는 적당히 달달 하면서 호지차 향이 넘 좋아요. 새로운 아지트 발견하게 되었습니다.</p>
+        <div class="rfoot">
+          <div class="rauthor">
+            <span class="ravatar-ini">은</span>
+            <div><span class="rname" data-tid="t138">은도9073</span><span class="rcount" data-tid="t143">네이버 리뷰 31개</span></div>
+          </div>
+          <div class="rtags"><span data-tid="t153">커피가 맛있어요</span><span data-tid="t154">특별한 메뉴가 있어요</span><span data-tid="t155">인테리어가 멋져요</span><span data-tid="t156">사진이 잘 나와요</span><span data-tid="t157">집중하기 좋아요</span></div>
+          <a class="rlink" href="리뷰4.PNG" target="_blank" rel="noopener" data-tid="t165">📷 네이버 리뷰 원본 보기</a>
+        </div>
+      </article>
+      <article class="review-card reveal">
+        <div class="stars">★★★★★ 5.0</div>
+        <h3 class="rtitle" data-tid="t129">산미 싫어해도 반한 위로 커피</h3>
+        <p class="rquote" data-tid="t134">산미 있는 커피 싫어하는데 위로 커피는 맛있어요.... 디카페인도 맛있슨...👍</p>
+        <div class="rfoot">
+          <div class="rauthor">
+            <span class="ravatar-ini">지</span>
+            <div><span class="rname" data-tid="t139">지원0909</span><span class="rcount" data-tid="t144">네이버 리뷰 131개</span></div>
+          </div>
+          <div class="rtags"><span data-tid="t158">커피가 맛있어요</span><span data-tid="t159">인테리어가 멋져요</span><span data-tid="t160">사진이 잘 나와요</span><span data-tid="t161">음악이 좋아요</span></div>
+          <a class="rlink" href="리뷰5.PNG" target="_blank" rel="noopener" data-tid="t166">📷 네이버 리뷰 원본 보기</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="reveal" style="margin-top:2.5rem;text-align:center">
+      <a href="https://map.naver.com/p/entry/place/2050192268" target="_blank" rel="noopener" class="btn btn-line" data-tid="t190">네이버 플레이스에서 더 많은 후기 보기</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INSTAGRAM ================= -->
+<section class="sec signature" id="instagram">
+  <div class="wrap">
+    <div class="insta-head reveal">
+      <div>
+        <span class="eyebrow" data-tid="t14">Instagram</span>
+        <h2 class="sec-title" style="margin-top:.8rem" data-tid="t29">@weroh_roastery</h2>
+      </div>
+      <a href="https://www.instagram.com/weroh_roastery/" target="_blank" rel="noopener" class="btn btn-line" data-tid="t191">인스타그램 보기</a>
+    </div>
+    <div class="ig-grid reveal">
+      <a href="https://www.instagram.com/weroh_roastery/" target="_blank" rel="noopener"><img class="photo" loading="lazy" decoding="async" src="weroh_06.jpg" data-slot="ig1" data-label="인스타그램 1" alt="위로커피 인스타그램 피드"></a>
+      <a href="https://www.instagram.com/weroh_roastery/" target="_blank" rel="noopener"><img class="photo" loading="lazy" decoding="async" src="weroh_08.jpg" data-slot="ig2" data-label="인스타그램 2" alt="위로커피 인스타그램 피드"></a>
+      <a href="https://www.instagram.com/weroh_roastery/" target="_blank" rel="noopener"><img class="photo" loading="lazy" decoding="async" src="weroh_13.jpg" data-slot="ig3" data-label="인스타그램 3" alt="위로커피 인스타그램 피드"></a>
+      <a href="https://www.instagram.com/weroh_roastery/" target="_blank" rel="noopener"><img class="photo" loading="lazy" decoding="async" src="weroh_15.jpg" data-slot="ig4" data-label="인스타그램 4" alt="위로커피 인스타그램 피드"></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LOCATION ================= -->
+<section class="sec location" id="location">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-tid="t15">Visit Us</span>
+      <h2 class="sec-title" data-tid="t30">찾아오시는 길</h2>
+      <p class="sec-sub" data-tid="t36">덕은동에서 위로 한 잔 하러 오세요.&nbsp;<br>방문 전 문의는 전화로 편하게 연락 주세요.</p>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-map reveal">
+        <img class="photo" loading="lazy" decoding="async" src="weroh_02.jpg" data-slot="loc" data-label="오시는 길 · 매장 외관" alt="위로커피로스터리 매장 외관">
+      </div>
+      <div class="loc-info reveal">
+        <div class="loc-row">
+          <div class="lb" data-tid="t167">Address</div>
+          <div class="val" data-tid="t170">위로커피로스터리<small>경기 고양시 덕양구 대덕산2길 14 101호</small></div>
+        </div>
+        <div class="loc-row">
+          <div class="lb" data-tid="t168">Hours</div>
+          <div class="val" data-tid="t171">영업시간<small>평일 08:00 – 18:00 &nbsp;·&nbsp; 토 10:00 – 17:00<br>일요일 휴무</small></div>
+        </div>
+        <div class="loc-row">
+          <div class="lb" data-tid="t169">Contact</div>
+          <div class="val" data-tid="t172">0507-1462-3316<small>네이버 주문 · 테이크아웃 · 단체 이용 가능</small></div>
+        </div>
+        <div class="loc-cta">
+          <a href="tel:050714623316" class="btn btn-dark" data-tid="t192">전화 문의</a>
+          <a href="https://map.naver.com/p/entry/place/2050192268" target="_blank" rel="noopener" class="btn btn-line" data-tid="t193">네이버 지도</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand" data-tid="t173">위로커피로스터리 <span style="font-family:var(--serif);font-weight:400;font-style:italic;font-size:1.1rem;color:var(--amber-soft)">weroh.</span><small>A cup of comfort, shared with you.</small></div>
+        <p class="foot-desc" data-tid="t174">덕은동 유일의 로스터리 카페. 계절마다 직접 생두를 선별해 로스팅하고, 신선한 원두로 한 잔의 위로를 전합니다.</p>
+      </div>
+      <div class="foot-col">
+        <h5 data-tid="t175">Menu</h5>
+        <a href="#menu-sec" data-tid="t177">시그니처 메뉴</a>
+        <a href="#drip" data-tid="t178">핸드드립</a>
+        <a href="#beans" data-tid="t179">원두 판매</a>
+        <a href="#process" data-tid="t180">로스팅 이야기</a>
+      </div>
+      <div class="foot-col">
+        <h5 data-tid="t176">Visit</h5>
+        <p data-tid="t182">경기 고양시 덕양구<br>대덕산2길 14 101호</p>
+        <p data-tid="t183">평일 08:00–18:00<br>토 10:00–17:00 · 일 휴무</p>
+        <a href="tel:050714623316" data-tid="t181">0507-1462-3316</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-tid="t184">© 2026 위로커피로스터리 weroh. All rights reserved.</span>
+      <span data-tid="t185">Instagram · Naver · Take-out</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav=document.getElementById('nav');
+  const onScroll=()=>nav.classList.toggle('scrolled',window.scrollY>40);
+  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+
+  const toggle=document.getElementById('toggle');
+  const menu=document.getElementById('menu');
+  toggle.addEventListener('click',()=>{
+    menu.classList.toggle('open');toggle.classList.toggle('open');
+  });
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+    menu.classList.remove('open');toggle.classList.remove('open');
+  }));
+
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+<div id="ed-bar" data-editor="">
+  <span id="ed-hint">📷 사진 · ✏️ 글자(선택 후 크기) · ↔ 좌우 손잡이로 폭</span>
+  <button class="b-ghost" id="ed-color">색상</button>
+  <button class="b-ghost" id="ed-margin">여백</button>
+  <button class="b-ghost" id="ed-toggle">미리보기</button>
+  <button class="b-ghost" id="ed-reset">초기화</button>
+  <button class="b-save" id="ed-export">저장</button>
+  <button class="b-ghost" id="ed-lock" title="편집 도구를 이 브라우저에서 숨깁니다">잠금</button>
+</div>
+<div id="ed-textctl" data-editor="">
+  <button data-act="dec" title="작게 (드래그 선택 시 그 부분만)">A−</button>
+  <span class="sz" id="ed-sz">16</span>
+  <button data-act="inc" title="크게 (드래그 선택 시 그 부분만)">A+</button>
+  <span class="sep"></span>
+  <button data-act="lh-dec" title="행간 좁게">⇕−</button>
+  <button data-act="lh-inc" title="행간 넓게">⇕+</button>
+  <span class="sep"></span>
+  <button data-act="left" title="왼쪽 정렬">⇤</button>
+  <button data-act="center" title="가운데 정렬">≡</button>
+  <button data-act="right" title="오른쪽 정렬">⇥</button>
+  <span class="sep"></span>
+  <input type="color" id="ed-color-txt" title="글자 색">
+  <span class="sep"></span>
+  <button data-act="reset" title="크기·행간·정렬·색·폭 초기화">↺</button>
+</div>
+<div id="ed-wl" class="ed-wh" data-editor=""></div>
+<div id="ed-wr" class="ed-wh" data-editor=""></div>
+<div id="ed-colors" data-editor="">
+  <h4>색상 · 버튼 컬러</h4>
+  <p class="sub">값을 바꾸면 화면에 바로 반영됩니다.<br>버튼은 ‘짙은 배경’·‘포인트’ 색을 따릅니다.</p>
+  <div id="ed-color-list"><div class="cr"><label>배경 (밝은)</label><input type="color"><input type="text"></div><div class="cr"><label>서브 배경</label><input type="color"><input type="text"></div><div class="cr"><label>짙은 배경 · 버튼</label><input type="color"><input type="text"></div><div class="cr"><label>포인트 · 버튼 컬러</label><input type="color"><input type="text"></div><div class="cr"><label>포인트 (연한)</label><input type="color"><input type="text"></div><div class="cr"><label>우드 톤</label><input type="color"><input type="text"></div><div class="cr"><label>본문 텍스트</label><input type="color"><input type="text"></div><div class="cr"><label>보조 텍스트</label><input type="color"><input type="text"></div></div>
+  <div class="cbtns"><button id="ed-creset">색상 초기화</button><button id="ed-cclose">닫기</button></div>
+</div>
+<div id="ed-margins" data-editor="">
+  <h4>레이아웃 · 여백</h4>
+  <p class="sub">전체 페이지의 좌우 여백과 섹션 간 간격을 조절합니다.</p>
+  <div class="mr">
+    <div class="mr-top"><label>좌우 여백</label><span class="mv" id="mg-mx-v">20px</span></div>
+    <input type="range" id="mg-mx" min="16" max="120" step="2">
+  </div>
+  <div class="mr">
+    <div class="mr-top"><label>섹션 간격 (전체 기본값)</label><span class="mv" id="mg-sp-v">80px</span></div>
+    <input type="range" id="mg-sp" min="48" max="180" step="4">
+  </div>
+  <h4 style="margin-top:22px">챕터별 상하 여백</h4>
+  <p class="sub">섹션 하나하나의 위·아래 여백을 따로 지정합니다. 전체 기본값보다 우선 적용됩니다.</p>
+  <div id="ed-section-pads"><div class="mr"><div class="mr-top"><label>Hero</label><span class="mv">100px</span></div><input type="range" min="20" max="220" step="4"></div><div class="mr"><div class="mr-top"><label>Brand Story</label><span class="mv">80px</span></div><input type="range" min="20" max="220" step="4"></div><div class="mr"><div class="mr-top"><label>The Roastery</label><span class="mv">80px</span></div><input type="range" min="20" max="220" step="4"></div><div class="mr"><div class="mr-top"><label>Signature Menu</label><span class="mv">80px</span></div><input type="range" min="20" max="220" step="4"></div><div class="mr"><div class="mr-top"><label>Hand Drip</label><span class="mv">80px</span></div><input type="range" min="20" max="220" step="4"></div><div class="mr"><div class="mr-top"><label>Bean Lineup</label><span class="mv">80px</span></div><input type="range" min="20" max="220" step="4"></div><div class="mr"><div class="mr-top"><label>Review</label><span class="mv">80px</span></div><input type="range" min="20" max="220" step="4"></div><div class="mr"><div class="mr-top"><label>Instagram</label><span class="mv">80px</span></div><input type="range" min="20" max="220" step="4"></div><div class="mr"><div class="mr-top"><label>Location</label><span class="mv">80px</span></div><input type="range" min="20" max="220" step="4"></div><div class="mr"><div class="mr-top"><label>Footer</label><span class="mv">64px</span></div><input type="range" min="20" max="220" step="4"></div></div>
+  <div class="cbtns"><button id="ed-mreset">여백 초기화</button><button id="ed-mclose">닫기</button></div>
+</div>
+<div id="ed-tip" data-editor=""></div>
+<div id="ed-toast" data-editor=""></div>
+<input type="file" id="ed-file" accept="image/*" style="display:none" data-editor="">
+
+<script data-editor="">
+(function(){
+  var KS='weroh_slots_v1', KT='weroh_text_v1', KC='weroh_colors_v1', KZ='weroh_sizes_v1', KU='weroh_edit_unlock';
+  var root=document.documentElement, body=document.body;
+
+  /* edit-mode lock: hidden from visitors by default. open with index.html?edit=1 once
+     (remembered on that browser via localStorage); ?edit=0 or the 잠금 button locks it again. */
+  var qs=new URLSearchParams(location.search);
+  if(qs.get('edit')==='1'){ try{localStorage.setItem(KU,'1');}catch(e){} }
+  if(qs.get('edit')==='0'){ try{localStorage.removeItem(KU);}catch(e){} }
+  if(qs.has('edit')){ qs.delete('edit'); var qStr=qs.toString(); history.replaceState(null,'',location.pathname+(qStr?'?'+qStr:'')+location.hash); }
+  var UNLOCKED=false; try{ UNLOCKED=localStorage.getItem(KU)==='1'; }catch(e){}
+  if(UNLOCKED) body.classList.add('editor-unlocked');
+
+  var fileInput=document.getElementById('ed-file');
+  var tip=document.getElementById('ed-tip'), toast=document.getElementById('ed-toast');
+  var panel=document.getElementById('ed-colors');
+  var ctl=document.getElementById('ed-textctl'), szLabel=document.getElementById('ed-sz');
+  var colorTxt=document.getElementById('ed-color-txt');
+  var wl=document.getElementById('ed-wl'), wr=document.getElementById('ed-wr');
+  var current=null, editing=true, activeText=null;
+
+  function lget(k){try{return JSON.parse(localStorage.getItem(k)||'{}');}catch(e){return {};}}
+  function lset(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+  function toastMsg(m){toast.textContent=m;toast.style.opacity='1';clearTimeout(toastMsg._t);toastMsg._t=setTimeout(function(){toast.style.opacity='0';},1600);}
+
+  /* images */
+  function slots(){return Array.prototype.slice.call(document.querySelectorAll('img.photo[data-slot]'));}
+  (function(){var s=lget(KS);slots().forEach(function(img){var k=img.getAttribute('data-slot');if(s[k])img.src=s[k];});})();
+  function saveImgs(){var d={};slots().forEach(function(img){d[img.getAttribute('data-slot')]=img.src;});lset(KS,d);}
+  fileInput.addEventListener('change',function(){var f=fileInput.files[0]; if(!f||!current)return;
+    var r=new FileReader(); r.onload=function(){current.src=r.result;saveImgs();toastMsg('사진이 등록되었습니다');}; r.readAsDataURL(f);});
+  slots().forEach(function(img){
+    img.addEventListener('dragover',function(e){if(editing)e.preventDefault();});
+    img.addEventListener('drop',function(e){ if(!editing)return; e.preventDefault();
+      var f=e.dataTransfer.files[0]; if(!f||f.type.indexOf('image')<0)return;
+      var r=new FileReader(); r.onload=function(){img.src=r.result;saveImgs();toastMsg('사진이 등록되었습니다');}; r.readAsDataURL(f);});
+  });
+
+  /* text elements */
+  var TXT=['.brand','.nav-links a','.eyebrow','.hero h1','.hero p.lead','.trust .t b','.trust .t span',
+   '.sec-title','.sec-sub','.story-lead','.story-body p','.story-tags span','.step-num','.step h3','.step p',
+   '.sig-item .nm b','.sig-item .nm span','.sig-item .price','.drip-row .rname','.drip-row .rnote','.drip-row .rmeta',
+   '.bean-card h4','.bean-card p','.bean-card .price','.beans-note',
+   '.review-stat b','.review-stat span','.review-stat-note','.review-kw-card h3','.review-kw-item span','.review-kw-item small',
+   '.review-card .rtitle','.review-card .rquote','.review-card .rname','.review-card .rcount','.review-card .rtags span','.review-card .rlink',
+   '.loc-row .lb','.loc-row .val','.foot-brand','.foot-desc','.foot-col h5','.foot-col a','.foot-col p','.foot-bottom span','.btn'];
+  var set=new Set();
+  TXT.forEach(function(s){document.querySelectorAll(s).forEach(function(e){ if(!e.closest('[data-editor]')) set.add(e);});});
+  var textEls=Array.from(set);
+  textEls.forEach(function(e,i){e.setAttribute('data-tid','t'+i);});
+
+  var textMap=lget(KT);
+  textEls.forEach(function(e){var id=e.getAttribute('data-tid'); if(textMap[id]!=null) e.innerHTML=textMap[id];});
+  var sizeMap=lget(KZ);
+  textEls.forEach(function(e){var z=sizeMap[e.getAttribute('data-tid')]; if(z){
+    if(z.fs)e.style.fontSize=z.fs; if(z.ta)e.style.textAlign=z.ta; if(z.co)e.style.color=z.co;
+    if(z.mw)e.style.maxWidth=z.mw; if(z.ml)e.style.marginLeft=z.ml; if(z.w)e.style.width=z.w;
+    if(z.lh)e.style.lineHeight=z.lh; }});
+
+  function saveText(el){ textMap[el.getAttribute('data-tid')]=el.innerHTML; lset(KT,textMap); }
+  document.addEventListener('input',function(e){var el=e.target.closest&&e.target.closest('[data-tid]'); if(!el)return; saveText(el);});
+  document.addEventListener('click',function(e){ if(!editing)return;
+    var a=e.target.closest&&e.target.closest('a[data-tid]'); if(a)e.preventDefault(); },true);
+
+  /* image click / tooltip */
+  document.addEventListener('click',function(e){ if(!editing)return;
+    var img=e.target.closest&&e.target.closest('img.photo[data-slot]'); if(!img)return;
+    e.preventDefault(); current=img; fileInput.value=''; fileInput.click(); });
+  document.addEventListener('mousemove',function(e){ if(!editing){tip.style.display='none';return;}
+    var img=e.target.closest&&e.target.closest('img.photo[data-slot]');
+    if(img){tip.innerHTML='📷 클릭해서 교체 · <b>'+(img.getAttribute('data-label')||'')+'</b>';
+      tip.style.display='block';tip.style.left=(e.clientX+14)+'px';tip.style.top=(e.clientY+14)+'px';}
+    else tip.style.display='none'; });
+
+  /* ---- size / align / color / width control ---- */
+  function saveSize(el){
+    var id=el.getAttribute('data-tid'); var o={};
+    if(el.style.fontSize)o.fs=el.style.fontSize; if(el.style.textAlign)o.ta=el.style.textAlign; if(el.style.color)o.co=el.style.color;
+    if(el.style.maxWidth)o.mw=el.style.maxWidth; if(el.style.marginLeft)o.ml=el.style.marginLeft; if(el.style.width)o.w=el.style.width;
+    if(el.style.lineHeight)o.lh=el.style.lineHeight;
+    if(Object.keys(o).length) sizeMap[id]=o; else delete sizeMap[id];
+    lset(KZ,sizeMap);
+  }
+  function lineHeightRatio(el){
+    var cs=getComputedStyle(el); var lh=parseFloat(cs.lineHeight), fs=parseFloat(cs.fontSize);
+    if(!lh||!fs) return 1.5;
+    return lh/fs;
+  }
+  function rgb2hex(c){var m=(c||'').match(/\d+/g); if(!m)return '#000000'; return '#'+m.slice(0,3).map(function(x){x=(+x).toString(16);return x.length<2?'0'+x:x;}).join('');}
+  function selEl(el){var s=window.getSelection(); if(s&&s.rangeCount&&!s.isCollapsed&&el&&el.contains(s.anchorNode)){var n=s.anchorNode;return n.nodeType===1?n:n.parentNode;} return el;}
+  function updateSz(el){ var t=selEl(el)||el; szLabel.textContent=Math.round(parseFloat(getComputedStyle(t).fontSize))+'px'; try{colorTxt.value=rgb2hex(getComputedStyle(el).color);}catch(e){} }
+  function isBlock(el){var d=getComputedStyle(el).display; return d==='block'||d==='flex'||d==='grid'||d==='list-item';}
+  function widthOK(el){ return !!(el&&el.matches&&el.matches('.hero h1,.hero p.lead,.sec-title,.sec-sub,.story-lead,.story-body p,.step h3,.step p,.beans-note,.quote p,.foot-desc,.loc-row .val')); }
+
+  function placeHandles(el){
+    if(!el||!widthOK(el)){wl.style.display='none';wr.style.display='none';return;}
+    var r=el.getBoundingClientRect(); var mid=r.top+r.height/2-23;
+    wl.style.display='block'; wr.style.display='block';
+    wl.style.top=mid+'px'; wl.style.left=(r.left-6)+'px';
+    wr.style.top=mid+'px'; wr.style.left=(r.right-5)+'px';
+  }
+  function placeCtl(el){
+    ctl.style.display='flex';
+    var r=el.getBoundingClientRect();
+    var top=r.top-40; if(top<8) top=r.bottom+8;
+    var left=Math.max(8, Math.min(r.left, window.innerWidth-ctl.offsetWidth-8));
+    ctl.style.top=top+'px'; ctl.style.left=left+'px'; updateSz(el); placeHandles(el);
+  }
+  function hideCtl(){ ctl.style.display='none'; wl.style.display='none'; wr.style.display='none'; activeText=null; }
+
+  document.addEventListener('focusin',function(e){ if(!editing)return;
+    var el=e.target.closest&&e.target.closest('[data-tid]'); if(el){ activeText=el; placeCtl(el); } });
+  document.addEventListener('mouseup',function(){ if(editing&&activeText&&ctl.style.display==='flex') updateSz(activeText); });
+  document.addEventListener('mousedown',function(e){ if(!editing)return;
+    if(ctl.contains(e.target))return;
+    if(e.target.closest&&e.target.closest('[data-editor]'))return;
+    if(e.target.closest&&e.target.closest('[data-tid]'))return;
+    hideCtl(); });
+  ctl.addEventListener('mousedown',function(e){ if(e.target.type==='color')return; e.preventDefault(); });
+  colorTxt.addEventListener('input',function(){ if(!activeText)return; activeText.style.color=this.value; saveSize(activeText); });
+
+  function resizeSelection(el,d){
+    var sel=window.getSelection(); if(!(sel&&sel.rangeCount&&!sel.isCollapsed))return false;
+    var range=sel.getRangeAt(0);
+    if(!(el.contains(range.startContainer)&&el.contains(range.endContainer)))return false;
+    var anc=range.commonAncestorContainer; anc=anc.nodeType===1?anc:anc.parentNode;
+    var host=anc.closest?anc.closest('span.ed-fs'):null;
+    if(host&&host.textContent===sel.toString()){
+      var c=parseFloat(getComputedStyle(host).fontSize); var nv=c+d; if(nv<8)nv=8; if(nv>240)nv=240; host.style.fontSize=nv+'px';
+    } else {
+      var b=parseFloat(getComputedStyle(range.startContainer.nodeType===1?range.startContainer:range.startContainer.parentNode).fontSize);
+      var nv2=b+d; if(nv2<8)nv2=8; if(nv2>240)nv2=240;
+      var span=document.createElement('span'); span.className='ed-fs'; span.style.fontSize=nv2+'px';
+      try{ range.surroundContents(span); }catch(e){ var frag=range.extractContents(); span.appendChild(frag); range.insertNode(span); }
+      sel.removeAllRanges(); var nr=document.createRange(); nr.selectNodeContents(span); sel.addRange(nr);
+    }
+    return true;
+  }
+
+  ctl.addEventListener('click',function(e){
+    var btn=e.target.closest('button'); if(!btn||!activeText)return;
+    var act=btn.getAttribute('data-act'); var el=activeText;
+    if(act==='inc'||act==='dec'){
+      var d=act==='inc'?1:-1;
+      if(resizeSelection(el,d)){ saveText(el); }
+      else { var cur=parseFloat(getComputedStyle(el).fontSize); var nv=cur+d; if(nv<8)nv=8; if(nv>240)nv=240; el.style.fontSize=nv+'px'; }
+    } else if(act==='lh-inc'||act==='lh-dec'){
+      var ld=act==='lh-inc'?0.1:-0.1;
+      var lr=lineHeightRatio(el)+ld; if(lr<0.9)lr=0.9; if(lr>3)lr=3;
+      el.style.lineHeight=Math.round(lr*100)/100;
+    } else if(act==='left'||act==='center'||act==='right'){ el.style.textAlign=act; }
+    else if(act==='reset'){
+      el.style.fontSize='';el.style.textAlign='';el.style.color='';el.style.maxWidth='';el.style.marginLeft='';el.style.width='';el.style.lineHeight='';
+      if(el.querySelectorAll){el.querySelectorAll('span.ed-fs').forEach(function(s){while(s.firstChild)s.parentNode.insertBefore(s.firstChild,s);s.remove();});}
+      saveText(el);
+    }
+    saveSize(el); updateSz(el); placeCtl(el);
+  });
+
+  /* width drag handles */
+  function bindHandle(handle,side){
+    handle.addEventListener('mousedown',function(e){
+      if(!editing||!activeText||!widthOK(activeText))return; e.preventDefault();
+      var el=activeText; var rect=el.getBoundingClientRect();
+      var cs=getComputedStyle(el); var startML=parseFloat(cs.marginLeft)||0; var origRight=rect.right;
+      function move(ev){
+        if(side==='right'){ var w=Math.max(60, ev.clientX-rect.left); el.style.maxWidth=Math.round(w)+'px'; el.style.width='auto'; }
+        else { var nl=ev.clientX; var delta=nl-rect.left; var w2=Math.max(60, origRight-nl);
+          el.style.marginLeft=Math.round(startML+delta)+'px'; el.style.maxWidth=Math.round(w2)+'px'; el.style.width='auto'; }
+        placeHandles(el); placeCtl(el);
+      }
+      function up(){ document.removeEventListener('mousemove',move); document.removeEventListener('mouseup',up); saveSize(el); }
+      document.addEventListener('mousemove',move); document.addEventListener('mouseup',up);
+    });
+  }
+  bindHandle(wl,'left'); bindHandle(wr,'right');
+  window.addEventListener('scroll',function(){ if(editing&&activeText&&ctl.style.display==='flex') placeCtl(activeText); },{passive:true});
+  window.addEventListener('resize',function(){ if(editing&&activeText&&ctl.style.display==='flex') placeCtl(activeText); });
+
+  /* colors */
+  var COLORS=[['--paper','배경 (밝은)'],['--paper-deep','서브 배경'],['--espresso','짙은 배경 · 버튼'],
+    ['--amber','포인트 · 버튼 컬러'],['--amber-soft','포인트 (연한)'],['--wood','우드 톤'],['--ink','본문 텍스트'],['--gray','보조 텍스트']];
+  var savedColors=lget(KC); var list=document.getElementById('ed-color-list');
+  COLORS.forEach(function(c){ var name=c[0], label=c[1];
+    var def=getComputedStyle(root).getPropertyValue(name).trim(); var val=savedColors[name]||def;
+    if(savedColors[name]) root.style.setProperty(name,val);
+    var row=document.createElement('div'); row.className='cr';
+    var lb=document.createElement('label'); lb.textContent=label;
+    var ci=document.createElement('input'); ci.type='color'; try{ci.value=val;}catch(e){}
+    var tx=document.createElement('input'); tx.type='text'; tx.value=val;
+    function apply(v){ root.style.setProperty(name,v); savedColors[name]=v; lset(KC,savedColors); }
+    ci.addEventListener('input',function(){tx.value=ci.value; apply(ci.value);});
+    tx.addEventListener('input',function(){ if(/^#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})$/.test(tx.value)){ try{ci.value=tx.value;}catch(e){} apply(tx.value);} });
+    row.appendChild(lb); row.appendChild(ci); row.appendChild(tx); list.appendChild(row); });
+  document.getElementById('ed-color').addEventListener('click',function(){panel.classList.toggle('open');});
+  document.getElementById('ed-cclose').addEventListener('click',function(){panel.classList.remove('open');});
+  document.getElementById('ed-creset').addEventListener('click',function(){ try{localStorage.removeItem(KC);}catch(e){} location.reload(); });
+
+  /* layout margins */
+  var KM='weroh_margins_v1';
+  var mgPanel=document.getElementById('ed-margins');
+  var mgMx=document.getElementById('mg-mx'), mgMxV=document.getElementById('mg-mx-v');
+  var mgSp=document.getElementById('mg-sp'), mgSpV=document.getElementById('mg-sp-v');
+  var savedMargins=lget(KM);
+  var wrapSample=document.querySelector('.wrap'), secSample=document.querySelector('.sec');
+  var defMx=wrapSample?Math.round(parseFloat(getComputedStyle(wrapSample).paddingLeft)):40;
+  var defSp=secSample?Math.round(parseFloat(getComputedStyle(secSample).paddingTop)):96;
+  var curMx=savedMargins.mx||defMx, curSp=savedMargins.sp||defSp;
+  if(savedMargins.mx) root.style.setProperty('--mx',savedMargins.mx+'px');
+  if(savedMargins.sp) root.style.setProperty('--sp',savedMargins.sp+'px');
+  mgMx.value=curMx; mgSp.value=curSp; mgMxV.textContent=curMx+'px'; mgSpV.textContent=curSp+'px';
+  mgMx.addEventListener('input',function(){ var v=+mgMx.value; root.style.setProperty('--mx',v+'px'); mgMxV.textContent=v+'px'; savedMargins.mx=v; lset(KM,savedMargins); });
+  mgSp.addEventListener('input',function(){ var v=+mgSp.value; root.style.setProperty('--sp',v+'px'); mgSpV.textContent=v+'px'; savedMargins.sp=v; lset(KM,savedMargins); });
+  document.getElementById('ed-margin').addEventListener('click',function(){mgPanel.classList.toggle('open');});
+  document.getElementById('ed-mclose').addEventListener('click',function(){mgPanel.classList.remove('open');});
+
+  /* per-section (chapter) padding */
+  var KP='weroh_section_pad_v1';
+  var SECTIONS=[['.hero','Hero'],['#story','Brand Story'],['#process','The Roastery'],['#menu-sec','Signature Menu'],
+    ['#drip','Hand Drip'],['#beans','Bean Lineup'],['#review','Review'],['#instagram','Instagram'],
+    ['#location','Location'],['footer','Footer']];
+  var savedPads=lget(KP); var padList=document.getElementById('ed-section-pads');
+  SECTIONS.forEach(function(s){ var sel=s[0], label=s[1]; var el=document.querySelector(sel); if(!el)return;
+    var def=Math.round(parseFloat(getComputedStyle(el).paddingTop))||96;
+    var val=savedPads[sel]||def;
+    if(savedPads[sel]){ el.style.paddingTop=val+'px'; el.style.paddingBottom=val+'px'; }
+    var row=document.createElement('div'); row.className='mr';
+    var top=document.createElement('div'); top.className='mr-top';
+    var lb=document.createElement('label'); lb.textContent=label;
+    var mv=document.createElement('span'); mv.className='mv'; mv.textContent=val+'px';
+    top.appendChild(lb); top.appendChild(mv);
+    var rng=document.createElement('input'); rng.type='range'; rng.min='20'; rng.max='220'; rng.step='4'; rng.value=val;
+    rng.addEventListener('input',function(){ var v=+rng.value; el.style.paddingTop=v+'px'; el.style.paddingBottom=v+'px'; mv.textContent=v+'px'; savedPads[sel]=v; lset(KP,savedPads); });
+    row.appendChild(top); row.appendChild(rng); padList.appendChild(row);
+  });
+
+  document.getElementById('ed-mreset').addEventListener('click',function(){ try{localStorage.removeItem(KM);localStorage.removeItem(KP);}catch(e){} location.reload(); });
+
+  /* mode + reset + save */
+  function setEditing(on){ editing=on; body.classList.toggle('editing',on);
+    textEls.forEach(function(e){ if(on)e.setAttribute('contenteditable','true'); else e.removeAttribute('contenteditable'); });
+    document.getElementById('ed-toggle').textContent=on?'미리보기':'편집';
+    if(!on){tip.style.display='none';panel.classList.remove('open');hideCtl();} }
+  setEditing(UNLOCKED);
+  document.getElementById('ed-toggle').addEventListener('click',function(){setEditing(!editing);});
+  document.getElementById('ed-lock').addEventListener('click',function(){
+    try{localStorage.removeItem(KU);}catch(e){} location.reload(); });
+  document.getElementById('ed-reset').addEventListener('click',function(){
+    if(!confirm('사진·텍스트·크기·폭·색상을 모두 처음 상태로 되돌릴까요?'))return;
+    try{[KS,KT,KZ,KC].forEach(function(k){localStorage.removeItem(k);});}catch(e){} location.reload(); });
+  document.getElementById('ed-export').addEventListener('click',function(){
+    /* everything is already auto-saved to this browser's storage as you edit;
+       this button just flushes the current state and confirms it, no file involved */
+    saveImgs();
+    textEls.forEach(function(e){ saveText(e); saveSize(e); });
+    toastMsg('변경사항이 저장되었습니다');
+  });
+})();
+</script>
+
+
+</body></html>
