@@ -273,8 +273,6 @@
   .review-card .rcount{font-size:.72rem;color:var(--gray)}
   .review-card .rtags{display:flex;flex-wrap:wrap;gap:.4rem}
   .review-card .rtags span{font-size:.68rem;background:rgba(34,28,22,.06);border-radius:100px;padding:.3em .8em;color:var(--ink)}
-  .review-card .rlink{font-size:.76rem;color:var(--amber);font-weight:600}
-  .review-card .rlink:hover{text-decoration:underline}
 
   /* ---------- instagram ---------- */
   .insta-head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem}
@@ -640,7 +638,6 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
             <div><span class="rname" data-tid="t135">Eclat du Temps</span><span class="rcount" data-tid="t140">네이버 리뷰 283개</span></div>
           </div>
           <div class="rtags"><span data-tid="t145">커피가 맛있어요</span><span data-tid="t146">특별한 메뉴가 있어요</span><span data-tid="t147">친절해요</span><span data-tid="t148">매장이 청결해요</span></div>
-          <a class="rlink" href="리뷰1.PNG" target="_blank" rel="noopener" data-tid="t162">📷 네이버 리뷰 원본 보기</a>
         </div>
       </article>
       <article class="review-card reveal in">
@@ -653,7 +650,6 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
             <div><span class="rname" data-tid="t136">덕패밀리</span><span class="rcount" data-tid="t141">네이버 리뷰 1,721개</span></div>
           </div>
           <div class="rtags"><span data-tid="t149">커피가 맛있어요</span><span data-tid="t150">음악이 좋아요</span><span data-tid="t151">뷰가 좋아요</span><span data-tid="t152">친절해요</span></div>
-          <a class="rlink" href="리뷰2.PNG" target="_blank" rel="noopener" data-tid="t163">📷 네이버 리뷰 원본 보기</a>
         </div>
       </article>
       <article class="review-card reveal in">
@@ -665,7 +661,6 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
             <span class="ravatar-ini">보</span>
             <div><span class="rname" data-tid="t137">보르댕</span><span class="rcount" data-tid="t142">네이버 리뷰 386개</span></div>
           </div>
-          <a class="rlink" href="리뷰3.PNG" target="_blank" rel="noopener" data-tid="t164">📷 네이버 리뷰 원본 보기</a>
         </div>
       </article>
       <article class="review-card reveal in">
@@ -678,7 +673,6 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
             <div><span class="rname" data-tid="t138">은도9073</span><span class="rcount" data-tid="t143">네이버 리뷰 31개</span></div>
           </div>
           <div class="rtags"><span data-tid="t153">커피가 맛있어요</span><span data-tid="t154">특별한 메뉴가 있어요</span><span data-tid="t155">인테리어가 멋져요</span><span data-tid="t156">사진이 잘 나와요</span><span data-tid="t157">집중하기 좋아요</span></div>
-          <a class="rlink" href="리뷰4.PNG" target="_blank" rel="noopener" data-tid="t165">📷 네이버 리뷰 원본 보기</a>
         </div>
       </article>
       <article class="review-card reveal in">
@@ -691,7 +685,6 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
             <div><span class="rname" data-tid="t139">지원0909</span><span class="rcount" data-tid="t144">네이버 리뷰 131개</span></div>
           </div>
           <div class="rtags"><span data-tid="t158">커피가 맛있어요</span><span data-tid="t159">인테리어가 멋져요</span><span data-tid="t160">사진이 잘 나와요</span><span data-tid="t161">음악이 좋아요</span></div>
-          <a class="rlink" href="리뷰5.PNG" target="_blank" rel="noopener" data-tid="t166">📷 네이버 리뷰 원본 보기</a>
         </div>
       </article>
     </div>
@@ -902,7 +895,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
    '.sig-item .nm b','.sig-item .nm span','.sig-item .price','.drip-row .rname','.drip-row .rnote','.drip-row .rmeta',
    '.bean-card h4','.bean-card p','.bean-card .price','.beans-note',
    '.review-stat b','.review-stat span','.review-stat-note','.review-kw-card h3','.review-kw-item span','.review-kw-item small',
-   '.review-card .rtitle','.review-card .rquote','.review-card .rname','.review-card .rcount','.review-card .rtags span','.review-card .rlink',
+   '.review-card .rtitle','.review-card .rquote','.review-card .rname','.review-card .rcount','.review-card .rtags span',
    '.loc-row .lb','.loc-row .val','.foot-brand','.foot-desc','.foot-col h5','.foot-col a','.foot-col p','.foot-bottom span','.btn'];
   var set=new Set();
   TXT.forEach(function(s){document.querySelectorAll(s).forEach(function(e){ if(!e.closest('[data-editor]')) set.add(e);});});
