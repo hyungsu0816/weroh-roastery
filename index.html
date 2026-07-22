@@ -69,8 +69,8 @@
     --serif-kr:'Noto Serif KR','Fraunces',serif;
     --sans:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;
 
-    --mx:clamp(1.25rem,5vw,6rem);
-    --sp:clamp(5rem,11vw,9.5rem);
+    --mx:55px;
+    --sp:120px;
   }
 
   *{margin:0;padding:0;box-sizing:border-box}
@@ -410,7 +410,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 <body class="">
 
 <!-- ================= NAV ================= -->
-<header class="nav" id="nav">
+<header class="nav scrolled" id="nav">
   <div class="wrap nav-inner">
     <a href="#top" class="brand" data-tid="t0"><img src="weroh_logo_nav.png" alt="weroh. 위로커피로스터리" class="brand-logo"><small>위로커피로스터리 · specialty coffee roastery</small></a>
     <nav class="nav-links" id="menu">
@@ -432,7 +432,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 <!-- ================= HERO ================= -->
 <section class="hero wrap" style="padding-top:100px;padding-bottom:100px">
   <div class="hero-grid">
-    <div class="hero-copy reveal">
+    <div class="hero-copy reveal in">
       <span class="eyebrow" data-tid="t7">덕은동 유일의 로스터리 카페 · 직접 로스팅</span>
       <h1 data-tid="t16" style="line-height: 1.08;"><span class="ed-fs" style="font-size:59.594px">당신과 함께<br>나누는<br>한 잔의 위로</span>
         <span class="en">A cup of comfort, shared with you.</span>
@@ -449,20 +449,20 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
         <div class="t"><b data-tid="t20">계절별</b><span data-tid="t23">생두 선별 · 신선함</span></div>
       </div>
     </div>
-    <div class="reveal">
+    <div class="reveal in">
       <img class="photo hero-photo" src="weroh_01.jpg" data-slot="hero" data-label="히어로 · 대표 이미지" alt="위로커피 핸드드립 추출 장면">
     </div>
   </div>
 </section>
 
 <!-- ================= BRAND STORY ================= -->
-<section class="sec story" id="story">
+<section class="sec story" id="story" style="padding-top:120px;padding-bottom:120px">
   <div class="wrap story-grid">
-    <div class="reveal">
+    <div class="reveal in">
       <span class="eyebrow" data-tid="t8">Brand Story</span>
       <p class="story-lead" style="margin-top:1.4rem" data-tid="t37">커피 한 잔으로 전하는<br>일상 속 작은 위로.</p>
     </div>
-    <div class="reveal story-body">
+    <div class="reveal story-body in">
       <p data-tid="t38">위로커피로스터리는 덕은동 유일의 로스터리 카페입니다. 매장에서 직접 원두를 볶아, 가장 신선한 상태로 내려드립니다.</p>
       <p data-tid="t39">계절마다 직접 생두를 선별하고 로스팅해 핸드드립과 에스프레소로 제공합니다. 화려함보다 한 잔의 깊이에 집중합니다.</p>
       <div class="story-tags">
@@ -474,16 +474,16 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 </section>
 
 <!-- ================= ROASTERY PROCESS (numbered) ================= -->
-<section class="sec process" id="process">
+<section class="sec process" id="process" style="padding-top:120px;padding-bottom:120px">
   <div class="wrap">
-    <div class="sec-head reveal">
+    <div class="sec-head reveal in">
       <span class="eyebrow" data-tid="t9">The Roastery</span>
       <h2 class="sec-title" data-tid="t24">생두에서 한 잔까지,<br><span class="en">from green bean to cup.</span></h2>
       <p class="sec-sub" data-tid="t31">'예쁜 카페'가 아니라 '직접 로스팅하는 로스터리'.&nbsp;<br>세 단계의 정성이 한 잔에 담깁니다.</p>
     </div>
 
     <!-- 01 -->
-    <div class="step reveal">
+    <div class="step reveal in">
       <div class="step-text">
         <span class="step-num" data-tid="t46">01</span>
         <h3 data-tid="t49">생두 선별<span class="en">Selection</span></h3>
@@ -496,7 +496,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
     </div>
 
     <!-- 02 -->
-    <div class="step rev reveal">
+    <div class="step rev reveal in">
       <div class="step-media">
         <div class="accent-block"></div>
         <img class="photo" loading="lazy" decoding="async" src="weroh_09.jpg" data-slot="step2" data-label="로스팅 02 · 로스팅" alt="매장 로스터기와 로스팅 공간">
@@ -504,12 +504,12 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
       <div class="step-text">
         <span class="step-num" data-tid="t47">02</span>
         <h3 data-tid="t50">로스팅<span class="en">Roasting</span></h3>
-        <p data-tid="t53">매장에서 소량씩 직접 볶아 항상 신선합니다. 원두 본연의 개성을 살려 부담 없는 산미와 깔끔한 맛으로 완성합니다.</p>
+        <p data-tid="t53" style="max-width: 403px; width: auto;">매장에서 소량씩 직접 볶아 항상 신선합니다. 원두 본연의 개성을 살려 부담 없는 산미와 깔끔한 맛으로 완성합니다.</p>
       </div>
     </div>
 
     <!-- 03 -->
-    <div class="step reveal">
+    <div class="step reveal in">
       <div class="step-text">
         <span class="step-num" data-tid="t48">03</span>
         <h3 data-tid="t51">추출<span class="en">Brewing</span></h3>
@@ -524,18 +524,18 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 </section>
 
 <!-- ================= SIGNATURE MENU ================= -->
-<section class="sec signature" id="menu-sec">
+<section class="sec signature" id="menu-sec" style="padding-top:120px;padding-bottom:120px">
   <div class="wrap">
-    <div class="sec-head reveal">
+    <div class="sec-head reveal in">
       <span class="eyebrow" data-tid="t10">Signature Menu</span>
-      <h2 class="sec-title" data-tid="t25">위로가 추천하는 다섯 가지</h2>
-      <p class="sec-sub" data-tid="t32">처음이라면 여기서 시작하세요. 시그니처 라떼와 대표 원두를 담았습니다.</p>
+      <h2 class="sec-title" data-tid="t25">위로가 추천하는&nbsp;<br>다섯 가지</h2>
+      <p class="sec-sub" data-tid="t32">처음이라면 여기서 시작하세요.&nbsp;<br>시그니처 라떼와 대표 원두를 담았습니다.</p>
     </div>
     <div class="sig-grid">
-      <div class="sig-visual reveal">
+      <div class="sig-visual reveal in">
         <img class="photo" loading="lazy" decoding="async" src="weroh_18.jpg" data-slot="sig" data-label="시그니처 · 대표 메뉴" alt="위로 시그니처 잔과 Glow Blend 원두">
       </div>
-      <ul class="sig-list reveal">
+      <ul class="sig-list reveal in">
         <li class="sig-item"><span class="idx">01</span><span class="nm"><b data-tid="t55">시그니처 라떼 (HOT)</b><span data-tid="t60">위로의 대표 한 잔, 부드럽고 균형 잡힌 맛</span></span><span class="price" data-tid="t65">₩3,700</span></li>
         <li class="sig-item"><span class="idx">02</span><span class="nm"><b data-tid="t56">시그니처 라떼 (ICED)</b><span data-tid="t61">깔끔하게 즐기는 시그니처</span></span><span class="price" data-tid="t66">₩4,200</span></li>
         <li class="sig-item"><span class="idx">03</span><span class="nm"><b data-tid="t57">에티오피아 타데 G1</b><span data-tid="t62">화사한 향과 부담 없는 산미의 핸드드립</span></span><span class="price" data-tid="t67">₩4,200</span></li>
@@ -547,14 +547,14 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 </section>
 
 <!-- ================= HAND DRIP ================= -->
-<section class="sec process" id="drip">
+<section class="sec process" id="drip" style="padding-top:120px;padding-bottom:120px">
   <div class="wrap">
-    <div class="sec-head reveal">
+    <div class="sec-head reveal in">
       <span class="eyebrow" data-tid="t11">Hand Drip</span>
-      <h2 class="sec-title" data-tid="t26">오늘의 핸드드립 라인업</h2>
-      <p class="sec-sub" data-tid="t33">직접 로스팅한 스페셜티 원두를 한 잔씩 정성껏 내려드립니다. 모든 핸드드립 ₩4,200 · 계절에 따라 라인업이 바뀝니다.</p>
+      <h2 class="sec-title" data-tid="t26">오늘의 핸드드립&nbsp;<br>라인업</h2>
+      <p class="sec-sub" data-tid="t33">직접 로스팅한 스페셜티 원두를 한 잔씩 정성껏 내려드립니다.&nbsp;<br>모든 핸드드립 ₩4,200 계절에 따라 라인업이 바뀝니다.</p>
     </div>
-    <div class="drip-list reveal">
+    <div class="drip-list reveal in">
       <div class="drip-row"><span class="rn">01</span><div><div class="rname" data-tid="t70">에티오피아 타데 G1</div><div class="rnote" data-tid="t77">화사한 꽃향 · 부담 없는 산미</div></div><span class="rmeta" data-tid="t84">Ethiopia</span></div>
       <div class="drip-row"><span class="rn">02</span><div><div class="rname" data-tid="t71">위로 오리진 블렌드</div><div class="rnote" data-tid="t78">균형감 · 매일 마시기 좋은</div></div><span class="rmeta" data-tid="t85">Signature</span></div>
       <div class="drip-row"><span class="rn">03</span><div><div class="rname" data-tid="t72">위로 그로우 블렌드</div><div class="rnote" data-tid="t79">묵직한 바디 · 고소한 여운</div></div><span class="rmeta" data-tid="t86">Signature</span></div>
@@ -567,40 +567,40 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 </section>
 
 <!-- ================= BEAN LINEUP ================= -->
-<section class="sec beans" id="beans">
+<section class="sec beans" id="beans" style="padding-top:120px;padding-bottom:120px">
   <div class="wrap">
-    <div class="sec-head reveal beans-head">
+    <div class="sec-head reveal beans-head in">
       <span class="eyebrow" data-tid="t12">Bean Lineup</span>
       <h2 class="sec-title" data-tid="t27">집에서도, 위로 한 잔</h2>
-      <p class="sec-sub" style="color:rgba(247,242,234,.62)" data-tid="t34">매장에서 직접 로스팅한 원두를 판매합니다. 네이버 주문으로도 편하게 받아보세요.</p>
+      <p class="sec-sub" style="color:rgba(247,242,234,.62)" data-tid="t34">매장에서 직접 로스팅한 원두를 판매합니다.&nbsp;<br>네이버 주문으로도 편하게 받아보세요.</p>
     </div>
     <div class="bean-grid">
-      <div class="bean-card reveal">
+      <div class="bean-card reveal in">
         <img class="photo" loading="lazy" decoding="async" src="weroh_19.jpg" data-slot="bean1" data-label="원두 · 에티오피아 타데 G1" alt="에티오피아 타데 G1 원두">
         <h4 data-tid="t91">에티오피아 타데 G1</h4><p data-tid="t95">화사한 향, 부담 없는 산미</p><div class="price" data-tid="t99">원두 판매 · 드립백</div>
       </div>
-      <div class="bean-card reveal">
+      <div class="bean-card reveal in">
         <img class="photo" loading="lazy" decoding="async" src="weroh_20.jpg" data-slot="bean2" data-label="원두 · 위로 오리진 블렌드" alt="위로 오리진 블렌드 원두">
         <h4 data-tid="t92">위로 오리진 블렌드</h4><p data-tid="t96">매일 마시기 좋은 균형</p><div class="price" data-tid="t100">원두 판매 · 드립백</div>
       </div>
-      <div class="bean-card reveal">
+      <div class="bean-card reveal in">
         <img class="photo" loading="lazy" decoding="async" src="weroh_21.jpg" data-slot="bean3" data-label="원두 · 콜롬비아 디카페인" alt="콜롬비아 디카페인 원두">
         <h4 data-tid="t93">콜롬비아 디카페인</h4><p data-tid="t97">부드러운 단맛, 카페인 부담 없이</p><div class="price" data-tid="t101">원두 판매</div>
       </div>
-      <div class="bean-card reveal">
+      <div class="bean-card reveal in">
         <img class="photo" loading="lazy" decoding="async" src="weroh_10.jpg" data-slot="bean4" data-label="원두 · 드립백 선물세트" alt="위로 드립백 선물세트">
         <h4 data-tid="t94">드립백 선물세트</h4><p data-tid="t98">집에서도, 선물로도 좋은 구성</p><div class="price" data-tid="t102">Gift Set</div>
       </div>
     </div>
-    <p class="beans-note reveal" data-tid="t103">원두 구매 &nbsp;·&nbsp; 200g <b>16,000원</b> &nbsp; 500g <b>26,000원</b> &nbsp; 1kg <b>45,000원</b> &nbsp;·&nbsp; 원두 구매 시 아메리카노 <b>1잔 무료</b></p>
-    <div style="margin-top:2.2rem" class="reveal"><a href="#location" class="btn btn-amber" data-tid="t189">원두 구매 문의</a></div>
+    <p class="beans-note reveal in" data-tid="t103">원두 구매 &nbsp;·&nbsp; 200g <b>16,000원</b> &nbsp; 500g <b>26,000원</b> &nbsp; 1kg <b>45,000원</b> &nbsp;·&nbsp; 원두 구매 시 아메리카노 <b>1잔 무료</b></p>
+    <div style="margin-top:2.2rem" class="reveal in"><a href="#location" class="btn btn-amber" data-tid="t189">원두 구매 문의</a></div>
   </div>
 </section>
 
 <!-- ================= REVIEW ================= -->
-<section class="sec review" id="review">
+<section class="sec review" id="review" style="padding-top:120px;padding-bottom:120px">
   <div class="wrap">
-    <div class="sec-head reveal">
+    <div class="sec-head reveal in">
       <span class="eyebrow" data-tid="t13">From Our Guests</span>
       <h2 class="sec-title" data-tid="t28">손님들이 남긴 <span class="en">words.</span></h2>
       <p class="sec-sub" data-tid="t35">실제 네이버 플레이스 리뷰에서 가져온 이야기입니다.</p>
@@ -608,7 +608,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 
     <!-- 평점 요약 + 키워드 -->
     <div class="review-top">
-      <div class="review-stat-card reveal">
+      <div class="review-stat-card reveal in">
         <div class="review-stat-row">
           <div class="review-stat"><b data-tid="t104">4.8</b><span data-tid="t106">네이버 리뷰 평균<br>(소개된 5건 기준)</span></div>
           <div class="review-divider"></div>
@@ -616,7 +616,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
         </div>
         <p class="review-stat-note" data-tid="t108">실제 네이버 플레이스 리뷰 캡처를 바탕으로 정리했습니다.</p>
       </div>
-      <div class="review-kw-card reveal">
+      <div class="review-kw-card reveal in">
         <h3 data-tid="t109">리뷰에 가장 많이 붙은 키워드</h3>
         <div class="review-kw-grid">
           <div class="review-kw-item"><span class="ic" data-tid="t110">☕</span><span data-tid="t111">커피가<br>맛있어요</span><small data-tid="t120">4회</small></div>
@@ -630,7 +630,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 
     <!-- 후기 카드 -->
     <div class="review-cards">
-      <article class="review-card reveal">
+      <article class="review-card reveal in">
         <div class="stars">★★★★ 4.5</div>
         <h3 class="rtitle" data-tid="t125">산미 부담 없이 깔끔한 르완다 부산제</h3>
         <p class="rquote" data-tid="t130">저는 르완다 부산제 마셔봤어요~ 산미가 부담스럽지 않고 깔끔해서 마시기 좋았고 마실수록 은은하게 올라오는 과일향도 거부감없이 좋았습니다. 원두 본연의 개성이 잘 느껴졌던 것 같아요. 위로라는 컨셉과 밝은 공간이 왠지 편안하게 느껴지기도 했고, 커피에 진심인 느낌이 들어 좋았습니다.</p>
@@ -643,7 +643,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
           <a class="rlink" href="리뷰1.PNG" target="_blank" rel="noopener" data-tid="t162">📷 네이버 리뷰 원본 보기</a>
         </div>
       </article>
-      <article class="review-card reveal">
+      <article class="review-card reveal in">
         <div class="stars">★★★★★ 5.0</div>
         <h3 class="rtitle" data-tid="t126">따뜻하게도 차갑게도 다 맛있는 원두</h3>
         <p class="rquote" data-tid="t131">위로커피 원두는 따뜻하게 마셔도, 차갑게 마셔도 아메리카노든 라떼든 다 맛있어요! 주말에만 커피를 내려 마셔서 맛있는 커피를 마실 수 있는 주말 홈카페 시간을 기다립니다. 제일 좋아하는 에티오피아 G1 원두와 과테말라 원두를 새로 주문해 봤는데 각각의 특색이 달라서 골고루 마셔보고 있습니다.</p>
@@ -656,7 +656,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
           <a class="rlink" href="리뷰2.PNG" target="_blank" rel="noopener" data-tid="t163">📷 네이버 리뷰 원본 보기</a>
         </div>
       </article>
-      <article class="review-card reveal">
+      <article class="review-card reveal in">
         <div class="stars">★★★★ 4.5</div>
         <h3 class="rtitle" data-tid="t127">특별함이 있는 커피, 라떼도 궁금해지는 곳</h3>
         <p class="rquote" data-tid="t132">매장안에 로스팅기계가 있길래 전부터 가보고싶었던곳. 진한커피를 좋아하는편인데 적당한 강도의 특별한 원두향이 나는 커피였음. 한모금 마시면서 맛이 특이하네~?했음. 그래서 그런가 뭔가 다같은 커피가 아닌 특별함이 있는 가게구나 생각함. 라떼맛 궁금해서 다시 방문해봐야겠음.</p>
@@ -668,7 +668,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
           <a class="rlink" href="리뷰3.PNG" target="_blank" rel="noopener" data-tid="t164">📷 네이버 리뷰 원본 보기</a>
         </div>
       </article>
-      <article class="review-card reveal">
+      <article class="review-card reveal in">
         <div class="stars">★★★★★ 5.0</div>
         <h3 class="rtitle" data-tid="t128">새로운 아지트, 시그니처 라떼가 꼬숩네요</h3>
         <p class="rquote" data-tid="t133">직접 원두를 로스팅 하신다기에 찾아가 봤는데, 너무 맛있습니다. 시그니처 라떼는 정말 꼬숩구요. 호지차라떼는 적당히 달달 하면서 호지차 향이 넘 좋아요. 새로운 아지트 발견하게 되었습니다.</p>
@@ -681,7 +681,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
           <a class="rlink" href="리뷰4.PNG" target="_blank" rel="noopener" data-tid="t165">📷 네이버 리뷰 원본 보기</a>
         </div>
       </article>
-      <article class="review-card reveal">
+      <article class="review-card reveal in">
         <div class="stars">★★★★★ 5.0</div>
         <h3 class="rtitle" data-tid="t129">산미 싫어해도 반한 위로 커피</h3>
         <p class="rquote" data-tid="t134">산미 있는 커피 싫어하는데 위로 커피는 맛있어요.... 디카페인도 맛있슨...👍</p>
@@ -696,16 +696,16 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
       </article>
     </div>
 
-    <div class="reveal" style="margin-top:2.5rem;text-align:center">
-      <a href="https://map.naver.com/p/entry/place/2050192268?c=15.00,0,0,0,dh&placePath=%2Freview%3FadditionalHeight%3D76%26fromPanelNum%3D1%26locale%3Dko%26svcName%3Dmap_pcv5%26timestamp%3D202607221921" target="_blank" rel="noopener" class="btn btn-line" data-tid="t190">네이버 플레이스에서 더 많은 후기 보기</a>
+    <div class="reveal in" style="margin-top:2.5rem;text-align:center">
+      <a href="https://map.naver.com/p/entry/place/2050192268?c=15.00,0,0,0,dh&amp;placePath=%2Freview%3FadditionalHeight%3D76%26fromPanelNum%3D1%26locale%3Dko%26svcName%3Dmap_pcv5%26timestamp%3D202607221921" target="_blank" rel="noopener" class="btn btn-line" data-tid="t190">네이버 플레이스에서 더 많은 후기 보기</a>
     </div>
   </div>
 </section>
 
 <!-- ================= INSTAGRAM ================= -->
-<section class="sec signature" id="instagram">
+<section class="sec signature" id="instagram" style="padding-top:120px;padding-bottom:120px">
   <div class="wrap">
-    <div class="insta-head reveal">
+    <div class="insta-head reveal in">
       <div>
         <span class="eyebrow" data-tid="t14">Instagram</span>
         <h2 class="sec-title" style="margin-top:.8rem" data-tid="t29">@weroh_roastery</h2>
@@ -722,7 +722,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 </section>
 
 <!-- ================= LOCATION ================= -->
-<section class="sec location" id="location">
+<section class="sec location" id="location" style="padding-top:120px;padding-bottom:120px">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow" data-tid="t15">Visit Us</span>
@@ -756,12 +756,12 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 </section>
 
 <!-- ================= FOOTER ================= -->
-<footer>
+<footer style="padding-top:88px;padding-bottom:88px">
   <div class="wrap">
     <div class="foot-top">
       <div>
         <div class="foot-brand" data-tid="t173">위로커피로스터리 <span style="font-family:var(--serif);font-weight:400;font-style:italic;font-size:1.1rem;color:var(--amber-soft)">weroh.</span><small>A cup of comfort, shared with you.</small></div>
-        <p class="foot-desc" data-tid="t174">덕은동 유일의 로스터리 카페. 계절마다 직접 생두를 선별해 로스팅하고, 신선한 원두로 한 잔의 위로를 전합니다.</p>
+        <p class="foot-desc" data-tid="t174" style="max-width: 344px; width: auto;">덕은동 유일의 로스터리 카페. 계절마다 직접 생두를 선별해 로스팅하고, 신선한 원두로 한 잔의 위로를 전합니다.</p>
       </div>
       <div class="foot-col">
         <h5 data-tid="t175">Menu</h5>
@@ -834,23 +834,23 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 <div id="ed-colors" data-editor="">
   <h4>색상 · 버튼 컬러</h4>
   <p class="sub">값을 바꾸면 화면에 바로 반영됩니다.<br>버튼은 ‘짙은 배경’·‘포인트’ 색을 따릅니다.</p>
-  <div id="ed-color-list"><div class="cr"><label>배경 (밝은)</label><input type="color"><input type="text"></div><div class="cr"><label>서브 배경</label><input type="color"><input type="text"></div><div class="cr"><label>짙은 배경 · 버튼</label><input type="color"><input type="text"></div><div class="cr"><label>포인트 · 버튼 컬러</label><input type="color"><input type="text"></div><div class="cr"><label>포인트 (연한)</label><input type="color"><input type="text"></div><div class="cr"><label>우드 톤</label><input type="color"><input type="text"></div><div class="cr"><label>본문 텍스트</label><input type="color"><input type="text"></div><div class="cr"><label>보조 텍스트</label><input type="color"><input type="text"></div></div>
+  <div id="ed-color-list"></div>
   <div class="cbtns"><button id="ed-creset">색상 초기화</button><button id="ed-cclose">닫기</button></div>
 </div>
 <div id="ed-margins" data-editor="">
   <h4>레이아웃 · 여백</h4>
   <p class="sub">전체 페이지의 좌우 여백과 섹션 간 간격을 조절합니다.</p>
   <div class="mr">
-    <div class="mr-top"><label>좌우 여백</label><span class="mv" id="mg-mx-v">20px</span></div>
+    <div class="mr-top"><label>좌우 여백</label><span class="mv" id="mg-mx-v">55px</span></div>
     <input type="range" id="mg-mx" min="16" max="120" step="2">
   </div>
   <div class="mr">
-    <div class="mr-top"><label>섹션 간격 (전체 기본값)</label><span class="mv" id="mg-sp-v">80px</span></div>
+    <div class="mr-top"><label>섹션 간격 (전체 기본값)</label><span class="mv" id="mg-sp-v">120px</span></div>
     <input type="range" id="mg-sp" min="48" max="180" step="4">
   </div>
   <h4 style="margin-top:22px">챕터별 상하 여백</h4>
   <p class="sub">섹션 하나하나의 위·아래 여백을 따로 지정합니다. 전체 기본값보다 우선 적용됩니다.</p>
-  <div id="ed-section-pads"><div class="mr"><div class="mr-top"><label>Hero</label><span class="mv">100px</span></div><input type="range" min="20" max="220" step="4"></div><div class="mr"><div class="mr-top"><label>Brand Story</label><span class="mv">80px</span></div><input type="range" min="20" max="220" step="4"></div><div class="mr"><div class="mr-top"><label>The Roastery</label><span class="mv">80px</span></div><input type="range" min="20" max="220" step="4"></div><div class="mr"><div class="mr-top"><label>Signature Menu</label><span class="mv">80px</span></div><input type="range" min="20" max="220" step="4"></div><div class="mr"><div class="mr-top"><label>Hand Drip</label><span class="mv">80px</span></div><input type="range" min="20" max="220" step="4"></div><div class="mr"><div class="mr-top"><label>Bean Lineup</label><span class="mv">80px</span></div><input type="range" min="20" max="220" step="4"></div><div class="mr"><div class="mr-top"><label>Review</label><span class="mv">80px</span></div><input type="range" min="20" max="220" step="4"></div><div class="mr"><div class="mr-top"><label>Instagram</label><span class="mv">80px</span></div><input type="range" min="20" max="220" step="4"></div><div class="mr"><div class="mr-top"><label>Location</label><span class="mv">80px</span></div><input type="range" min="20" max="220" step="4"></div><div class="mr"><div class="mr-top"><label>Footer</label><span class="mv">64px</span></div><input type="range" min="20" max="220" step="4"></div></div>
+  <div id="ed-section-pads"></div>
   <div class="cbtns"><button id="ed-mreset">여백 초기화</button><button id="ed-mclose">닫기</button></div>
 </div>
 <div id="ed-tip" data-editor=""></div>
@@ -1040,7 +1040,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
   /* colors */
   var COLORS=[['--paper','배경 (밝은)'],['--paper-deep','서브 배경'],['--espresso','짙은 배경 · 버튼'],
     ['--amber','포인트 · 버튼 컬러'],['--amber-soft','포인트 (연한)'],['--wood','우드 톤'],['--ink','본문 텍스트'],['--gray','보조 텍스트']];
-  var savedColors=lget(KC); var list=document.getElementById('ed-color-list');
+  var savedColors=lget(KC); var list=document.getElementById('ed-color-list'); list.innerHTML='';
   COLORS.forEach(function(c){ var name=c[0], label=c[1];
     var def=getComputedStyle(root).getPropertyValue(name).trim(); var val=savedColors[name]||def;
     if(savedColors[name]) root.style.setProperty(name,val);
@@ -1079,7 +1079,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
   var SECTIONS=[['.hero','Hero'],['#story','Brand Story'],['#process','The Roastery'],['#menu-sec','Signature Menu'],
     ['#drip','Hand Drip'],['#beans','Bean Lineup'],['#review','Review'],['#instagram','Instagram'],
     ['#location','Location'],['footer','Footer']];
-  var savedPads=lget(KP); var padList=document.getElementById('ed-section-pads');
+  var savedPads=lget(KP); var padList=document.getElementById('ed-section-pads'); padList.innerHTML='';
   SECTIONS.forEach(function(s){ var sel=s[0], label=s[1]; var el=document.querySelector(sel); if(!el)return;
     var def=Math.round(parseFloat(getComputedStyle(el).paddingTop))||96;
     var val=savedPads[sel]||def;
