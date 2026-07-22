@@ -108,6 +108,10 @@
     backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
     box-shadow:0 1px 0 var(--line-soft);padding:1rem 0;
   }
+  /* backdrop-filter creates a new containing block for descendant position:fixed
+     elements — with the mobile menu open this collapses it to the header's own
+     height instead of the full viewport, so suspend the filter while open */
+  header.nav.menu-open{backdrop-filter:none;-webkit-backdrop-filter:none}
   .nav-inner{display:flex;align-items:center;justify-content:space-between}
   .brand{display:inline-flex;flex-direction:column;align-items:flex-start;font-family:var(--serif-kr);font-weight:500;font-size:1.2rem;letter-spacing:.01em}
   .brand-logo{height:20px;width:auto;display:block}
@@ -827,10 +831,10 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
   const toggle=document.getElementById('toggle');
   const menu=document.getElementById('menu');
   toggle.addEventListener('click',()=>{
-    menu.classList.toggle('open');toggle.classList.toggle('open');
+    menu.classList.toggle('open');toggle.classList.toggle('open');nav.classList.toggle('menu-open');
   });
   menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
-    menu.classList.remove('open');toggle.classList.remove('open');
+    menu.classList.remove('open');toggle.classList.remove('open');nav.classList.remove('menu-open');
   }));
 
   const io=new IntersectionObserver((entries)=>{
