@@ -958,10 +958,20 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
    '.review-stat b','.review-stat span','.review-stat-note','.review-kw-card h3','.review-kw-item span','.review-kw-item small',
    '.review-card .rtitle','.review-card .rquote','.review-card .rname','.review-card .rcount','.review-card .rtags span',
    '.loc-row .lb','.loc-row .val','.foot-brand','.foot-desc','.foot-col h5','.foot-col a','.foot-col p','.foot-bottom span','.btn'];
-  var set=new Set();
-  TXT.forEach(function(s){document.querySelectorAll(s).forEach(function(e){ if(!e.closest('[data-editor]')) set.add(e);});});
-  var textEls=Array.from(set);
-  textEls.forEach(function(e,i){e.setAttribute('data-tid','t'+i);});
+  /* stable per-selector IDs: derived from the selector text + occurrence index within
+     it, so adding/removing elements matched by OTHER selectors never shifts anyone
+     else's saved id (unlike a flat global counter, which silently misapplies old
+     saved text/size overrides onto the wrong element after any structural edit) */
+  var seenEls=new Set(); var textEls=[]; var occurrence={};
+  TXT.forEach(function(sel){
+    var key=sel.replace(/[^a-zA-Z0-9]+/g,'_');
+    document.querySelectorAll(sel).forEach(function(e){
+      if(e.closest('[data-editor]')||seenEls.has(e)) return;
+      seenEls.add(e); textEls.push(e);
+      occurrence[key]=(occurrence[key]||0)+1;
+      e.setAttribute('data-tid', key+'_'+occurrence[key]);
+    });
+  });
 
   var textMap=lget(KT);
   textEls.forEach(function(e){var id=e.getAttribute('data-tid'); if(textMap[id]!=null) e.innerHTML=textMap[id];});
