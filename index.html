@@ -1174,6 +1174,21 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
   document.getElementById('ed-toggle').addEventListener('click',function(){setEditing(!editing);});
   document.getElementById('ed-lock').addEventListener('click',function(){
     try{localStorage.removeItem(KU);}catch(e){} location.reload(); });
+
+  /* Ctrl+Alt+E toggles editor unlock without needing ?edit=1 in the URL */
+  document.addEventListener('keydown',function(e){
+    if(!e.ctrlKey||!e.altKey) return;
+    if(e.key!=='e'&&e.key!=='E') return;
+    e.preventDefault();
+    if(UNLOCKED){
+      try{localStorage.removeItem(KU);}catch(err){}
+      UNLOCKED=false; body.classList.remove('editor-unlocked'); setEditing(false);
+    } else {
+      try{localStorage.setItem(KU,'1');}catch(err){}
+      UNLOCKED=true; body.classList.add('editor-unlocked'); setEditing(true);
+      toastMsg('편집 잠금 해제');
+    }
+  });
   document.getElementById('ed-reset').addEventListener('click',function(){
     if(!confirm('사진·텍스트·크기·폭·색상을 모두 처음 상태로 되돌릴까요?'))return;
     try{[KS,KT,KZ,KC].forEach(function(k){localStorage.removeItem(k);});}catch(e){} location.reload(); });
