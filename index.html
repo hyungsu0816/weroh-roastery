@@ -69,8 +69,8 @@
     --serif-kr:'Noto Serif KR','Fraunces',serif;
     --sans:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;
 
-    --mx:55px;
-    --sp:120px;
+    --mx:clamp(1.25rem,6vw,55px);
+    --sp:clamp(3.5rem,12vw,120px);
   }
 
   *{margin:0;padding:0;box-sizing:border-box}
@@ -80,6 +80,7 @@
     background:var(--paper);
     color:var(--ink);
     line-height:1.7;
+    word-break:keep-all;
     -webkit-font-smoothing:antialiased;
     overflow-x:hidden;
   }
@@ -338,6 +339,7 @@
     .story-grid{gap:2.5rem}
     .bean-grid{grid-template-columns:repeat(2,1fr)}
     .review-top{grid-template-columns:1fr}
+    .review-divider{display:none}
     .review-cards{grid-template-columns:repeat(2,1fr)}
     .ig-grid{grid-template-columns:repeat(3,1fr)}
     .step,.step.rev .step-media{grid-template-columns:1fr}
@@ -346,8 +348,9 @@
     .sig-visual::before{display:none}
     .foot-top{grid-template-columns:1fr 1fr}
     .loc-map{min-height:300px}
-  }
-  @media(max-width:640px){
+    /* nav collapses to a hamburger menu here too — at this width there isn't
+       room for brand + 6 links + CTA on one line without each link wrapping
+       into a vertical stack of single characters */
     .nav-links{
       position:fixed;inset:0 0 0 auto;width:min(62vw,240px);
       background:var(--paper);flex-direction:column;justify-content:center;
@@ -360,6 +363,8 @@
     .nav-toggle.open span:nth-child(1){transform:translateY(6.6px) rotate(45deg)}
     .nav-toggle.open span:nth-child(2){opacity:0}
     .nav-toggle.open span:nth-child(3){transform:translateY(-6.6px) rotate(-45deg)}
+  }
+  @media(max-width:640px){
     .trust{flex-wrap:wrap;gap:1.5rem}
     .bean-grid{grid-template-columns:1fr}
     .review-cards{grid-template-columns:1fr}
@@ -450,11 +455,11 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 <span id="top"></span>
 
 <!-- ================= HERO ================= -->
-<section class="hero wrap" style="padding-top:100px;padding-bottom:100px">
+<section class="hero wrap" style="padding-top:clamp(64px,14vw,100px);padding-bottom:clamp(64px,14vw,100px)">
   <div class="hero-grid">
     <div class="hero-copy reveal in">
       <span class="eyebrow" data-tid="t7">덕은동 유일의 로스터리 카페 · 직접 로스팅</span>
-      <h1 data-tid="t16" style="line-height: 1.08;"><span class="ed-fs" style="font-size:59.594px">당신과 함께<br>나누는<br>한 잔의 위로</span>
+      <h1 data-tid="t16" style="line-height: 1.08;"><span class="ed-fs" style="font-size:clamp(2.8rem,7vw,3.9rem)">당신과 함께<br>나누는<br>한 잔의 위로</span>
         <span class="en">A cup of comfort, shared with you.</span>
       </h1>
       <p class="lead" data-tid="t17" style="max-width: 410px; width: auto;">계절마다 직접 생두를 선별해 로스팅합니다.&nbsp;<br>신선한 원두로 내리는 핸드드립과 에스프레소를 만나보세요.</p>
@@ -476,7 +481,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 </section>
 
 <!-- ================= BRAND STORY ================= -->
-<section class="sec story" id="story" style="padding-top:120px;padding-bottom:120px">
+<section class="sec story" id="story" style="padding-top:clamp(64px,14vw,120px);padding-bottom:clamp(64px,14vw,120px)">
   <div class="wrap story-grid">
     <div class="reveal in">
       <span class="eyebrow" data-tid="t8">Brand Story</span>
@@ -494,7 +499,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 </section>
 
 <!-- ================= ROASTERY PROCESS (numbered) ================= -->
-<section class="sec process" id="process" style="padding-top:120px;padding-bottom:120px">
+<section class="sec process" id="process" style="padding-top:clamp(64px,14vw,120px);padding-bottom:clamp(64px,14vw,120px)">
   <div class="wrap">
     <div class="sec-head reveal in">
       <span class="eyebrow" data-tid="t9">The Roastery</span>
@@ -544,7 +549,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 </section>
 
 <!-- ================= SIGNATURE MENU ================= -->
-<section class="sec signature" id="menu-sec" style="padding-top:120px;padding-bottom:120px">
+<section class="sec signature" id="menu-sec" style="padding-top:clamp(64px,14vw,120px);padding-bottom:clamp(64px,14vw,120px)">
   <div class="wrap">
     <div class="sec-head reveal in">
       <span class="eyebrow" data-tid="t10">Signature Menu</span>
@@ -567,7 +572,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 </section>
 
 <!-- ================= HAND DRIP ================= -->
-<section class="sec process" id="drip" style="padding-top:120px;padding-bottom:120px">
+<section class="sec process" id="drip" style="padding-top:clamp(64px,14vw,120px);padding-bottom:clamp(64px,14vw,120px)">
   <div class="wrap">
     <div class="drip-top">
       <div class="sec-head reveal in">
@@ -611,7 +616,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 </section>
 
 <!-- ================= BEAN LINEUP ================= -->
-<section class="sec beans" id="beans" style="padding-top:120px;padding-bottom:120px">
+<section class="sec beans" id="beans" style="padding-top:clamp(64px,14vw,120px);padding-bottom:clamp(64px,14vw,120px)">
   <div class="wrap">
     <div class="sec-head reveal beans-head in">
       <span class="eyebrow" data-tid="t12">Bean Lineup</span>
@@ -642,7 +647,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 </section>
 
 <!-- ================= REVIEW ================= -->
-<section class="sec review" id="review" style="padding-top:120px;padding-bottom:120px">
+<section class="sec review" id="review" style="padding-top:clamp(64px,14vw,120px);padding-bottom:clamp(64px,14vw,120px)">
   <div class="wrap">
     <div class="sec-head reveal in">
       <span class="eyebrow" data-tid="t13">From Our Guests</span>
@@ -742,7 +747,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 </section>
 
 <!-- ================= INSTAGRAM ================= -->
-<section class="sec signature" id="instagram" style="padding-top:120px;padding-bottom:120px">
+<section class="sec signature" id="instagram" style="padding-top:clamp(64px,14vw,120px);padding-bottom:clamp(64px,14vw,120px)">
   <div class="wrap">
     <div class="insta-head reveal in">
       <div>
@@ -761,7 +766,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 </section>
 
 <!-- ================= LOCATION ================= -->
-<section class="sec location" id="location" style="padding-top:120px;padding-bottom:120px">
+<section class="sec location" id="location" style="padding-top:clamp(64px,14vw,120px);padding-bottom:clamp(64px,14vw,120px)">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow" data-tid="t15">Visit Us</span>
@@ -795,7 +800,7 @@ body:not(.editor-unlocked) [data-editor]{display:none!important}
 </section>
 
 <!-- ================= FOOTER ================= -->
-<footer style="padding-top:88px;padding-bottom:88px">
+<footer style="padding-top:clamp(56px,10vw,88px);padding-bottom:clamp(56px,10vw,88px)">
   <div class="wrap">
     <div class="foot-top">
       <div>
